@@ -1,0 +1,13 @@
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\XmlConfig\AnswerList.xml
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\XmlConfig\BankCode.xml
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\XmlConfig\PinganPayConfig.xml
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\XmlConfig\Province.xml
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\NLog.config
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\EE.Services.Pay.dll.config
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\EE.Services.Pay.dll
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\EE.Services.Pay.pdb
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\MySql.Data.dll
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\NLog.dll
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\bin\Release\NLog.xml
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\obj\Release\EE.Services.Pay.dll
+D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\obj\Release\EE.Services.Pay.pdb

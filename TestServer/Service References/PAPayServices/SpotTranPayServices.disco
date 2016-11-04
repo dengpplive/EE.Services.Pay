@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://115.159.186.113:8688/SpotTranPayServices.asmx?wsdl" docRef="http://115.159.186.113:8688/SpotTranPayServices.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://115.159.186.113:8688/SpotTranPayServices.asmx" xmlns:q1="http://demo2.xx3700.com/" binding="q1:SpotTranPayServicesSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://115.159.186.113:8688/SpotTranPayServices.asmx" xmlns:q2="http://demo2.xx3700.com/" binding="q2:SpotTranPayServicesSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

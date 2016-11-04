@@ -1,0 +1,8 @@
+11:01:15|Error|EE.Services.Pay.Common.BankInterface.GetTranMessageBody|类型:02 BuildString_1343方法不存在
+11:01:15|Error|EE.Services.Pay.Common.ErpClient.Recv8or122Message|System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 EE.Services.Pay.Common.ErpClient.Recv8or122Message(Socket socket) 位置 D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\Common\ErpClient.cs:行号 222
+11:01:15|Error|EE.Services.Pay.Common.ErpClient.Recv8or122Message|System.Net.Sockets.SocketException (0x80004005): 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 EE.Services.Pay.Common.ErpClient.Recv8or122Message(Socket socket) 位置 D:\Project\EEServices\sources\EE.Services.Pay\EE.Services.Pay\Common\ErpClient.cs:行号 222
+11:01:15|Error|EE.Services.Pay.Common.BankInterface.GetTranMessageBody|类型:02 BuildString_1343方法不存在

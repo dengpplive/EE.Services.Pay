@@ -1,0 +1,306 @@
+时间:2016-08-18 17:15:11.894
+请求:A001010101009012600000000180000000000146FILE0100000012016081817151120160818171511306582                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818171510258784</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009012600000000180000000000000FILE0100000012016081817151120160818171511306582000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009012600000000180000000000000FILE0100000012016081817151120160818171511306582000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818171511]
+RspMsgLength=[0000000000]
+Qydm=[09012600000000180000]
+ThirdLogNo=[20160818171511306582]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:17:58.738
+请求:A001010101009012600000000180000000000311KHKF0100000012016081817175820160818171758834238                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><BatchNo>20160818171738067167</BatchNo><AcctNo>11014982632003</AcctNo><BusiType>00000</BusiType><CorpId>E000087685</CorpId><TotalNum>1</TotalNum><TotalAmount>1</TotalAmount><FileName>text2.txt</FileName><RandomPwd>LVnNAIXURkLEJvbVcVFSQ231AQ33uA8T</RandomPwd></Result>
+响应:A001010101009012600000000180000000000000KHKF0100000022016081817175820160818171758834238YQ9986:企业没有开通银企直联                                                                               000001            0         0
+解析结果:
+Data=[A001010101009012600000000180000000000000KHKF0100000022016081817175820160818171758834238YQ9986:企业没有开通银企直联                                                                               000001            0         0]
+TranFunc=[KHKF01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9986]
+RspMsg=[:企业没有开通银企直联                                                                               ]
+TrandateTime=[20160818171758]
+RspMsgLength=[0000000000]
+Qydm=[09012600000000180000]
+ThirdLogNo=[20160818171758834238]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:22:50.218
+请求:A001010101009010250000000650000000000146FILE0100000012016081817225020160818172250064753                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818172248835626</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009010250000000650000000000000FILE0100000012016081817225020160818172250064753000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009010250000000650000000000000FILE0100000012016081817225020160818172250064753000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818172250]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818172250064753]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:23:56.904
+请求:A001010101009010250000000650000000000311KHKF0100000012016081817235620160818172356158486                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><BatchNo>20160818172355518456</BatchNo><AcctNo>11015065535007</AcctNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1</TotalAmount><FileName>text2.txt</FileName><RandomPwd>iUmSEUuEUeCD8Xt5UQXNftD5hwrXI5Vf</RandomPwd></Result>
+响应:A001010101009010250000000650000000000000KHKF0100000022016081817235620160818172356158486YQ9986:企业没有开通银企直联                                                                               000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0100000022016081817235620160818172356158486YQ9986:企业没有开通银企直联                                                                               000001            0         0]
+TranFunc=[KHKF01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9986]
+RspMsg=[:企业没有开通银企直联                                                                               ]
+TrandateTime=[20160818172356]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818172356158486]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:38:05.016
+请求:A001010101009010250000000650000000000311KHKF0100000012016081817380520160818173805874272                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><BatchNo>20160818173754406340</BatchNo><AcctNo>11015065535007</AcctNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1</TotalAmount><FileName>text2.txt</FileName><RandomPwd>iUmSEUuEUeCD8Xt5UQXNftD5hwrXI5Vf</RandomPwd></Result>
+响应:A001010101009010250000000650000000000000KHKF0100000022016081817380520160818173805874272文件头:文件头错误,totalNum不能为空                                                                        000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0100000022016081817380520160818173805874272文件头:文件头错误,totalNum不能为空                                                                        000001            0         0]
+TranFunc=[KHKF01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[文件头:文件]
+RspMsg=[:文件头错误,totalNum不能为空                                                                        ]
+TrandateTime=[20160818173805]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818173805874272]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:43:05.091
+请求:A001010101009010250000000650000000000146FILE0100000012016081817430520160818174305528565                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818174303518160</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009010250000000650000000000000FILE0100000012016081817430520160818174305528565000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009010250000000650000000000000FILE0100000012016081817430520160818174305528565000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818174305]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818174305528565]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:44:10.041
+请求:A001010101009010250000000650000000000311KHKF0100000012016081817441020160818174409436432                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><BatchNo>20160818174409706528</BatchNo><AcctNo>11015065535007</AcctNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1</TotalAmount><FileName>text2.txt</FileName><RandomPwd>rrXuXbKZpwuMvw5Y3HbkKWBGpe2KuAM4</RandomPwd></Result>
+响应:A001010101009010250000000650000000000000KHKF0100000022016081817441020160818174409436432YQ9993:文件解析付款帐号[11014891210001]与报文中帐号[11015065535007]不一致                                 000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0100000022016081817441020160818174409436432YQ9993:文件解析付款帐号[11014891210001]与报文中帐号[11015065535007]不一致                                 000001            0         0]
+TranFunc=[KHKF01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9993]
+RspMsg=[:文件解析付款帐号[11014891210001]与报文中帐号[11015065535007]不一致                                 ]
+TrandateTime=[20160818174410]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818174409436432]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:04:28.002
+请求:A001010101009010250000000650000000000146FILE0100000012016081818042720160818180427067841                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818180426706732</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009010250000000650000000000000FILE0100000012016081818042720160818180427067841000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009010250000000650000000000000FILE0100000012016081818042720160818180427067841000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818180427]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818180427067841]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:05:20.927
+请求:A001010101009010250000000650000000000311KHKF0100000012016081818052020160818180520654064                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><BatchNo>20160818180519216306</BatchNo><AcctNo>11015065535007</AcctNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1</TotalAmount><FileName>text2.txt</FileName><RandomPwd>CzADoxCOtcMVkZSfIVUwJItFOkULvKmx</RandomPwd></Result>
+响应:A001010101009010250000000650000000000199KHKF0100000022016081818052020160818180520654064000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000199KHKF0100000022016081818052020160818180520654064000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount></Result>]
+TranFunc=[KHKF01]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818180520]
+RspMsgLength=[0000000199]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818180520654064]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:07:02.951
+请求:A001010101009010250000000650000000000123KHKF0200000012016081818070220160818180702712352                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><AcctNo>11015065535007</AcctNo><BatchNo>20160818180519216306</BatchNo></Result>
+响应:A001010101009010250000000650000000000296KHKF0200000022016081818070220160818180702712352000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BatchStt>40</BatchStt><BatchInfo>代付预记账处理成功</BatchInfo><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount><FileName></FileName><RandomPwd></RandomPwd><HashData></HashData><SignData></SignData></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000296KHKF0200000022016081818070220160818180702712352000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BatchStt>40</BatchStt><BatchInfo>代付预记账处理成功</BatchInfo><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount><FileName></FileName><RandomPwd></RandomPwd><HashData></HashData><SignData></SignData></Result>]
+TranFunc=[KHKF02]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><BatchNo>20160818180519216306</BatchNo><BatchStt>40</BatchStt><BatchInfo>代付预记账处理成功</BatchInfo><TotalNum>1</TotalNum><TotalAmount>1.00</TotalAmount><FileName></FileName><RandomPwd></RandomPwd><HashData></HashData><SignData></SignData></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818180702]
+RspMsgLength=[0000000296]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818180702712352]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:10:44.184
+请求:A001010101009010250000000650000000000342KHKF0300000012016081818104420160818181044406234                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><OrderNumber>20160818181042768246</OrderNumber><AcctNo>11015065535007</AcctNo><BusiType>0000</BusiType><CorpId>E000088334</CorpId><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName><InAcctBankName>招商银行</InAcctBankName></Result>
+响应:A001010101009010250000000650000000000000KHKF0300000022016081818104420160818181044406234BIB006:代收付协议不存在，请确保上送的代收付协议信息正确                                                   000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0300000022016081818104420160818181044406234BIB006:代收付协议不存在，请确保上送的代收付协议信息正确                                                   000001            0         0]
+TranFunc=[KHKF03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[BIB006]
+RspMsg=[:代收付协议不存在，请确保上送的代收付协议信息正确                                                   ]
+TrandateTime=[20160818181044]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818181044406234]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:11:38.208
+请求:A001010101009010250000000650000000000301KHKF0300000012016081818113820160818181138454324                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><OrderNumber>20160818181137725848</OrderNumber><AcctNo>11015065535007</AcctNo><BusiType>0000</BusiType><CorpId>E000088334</CorpId><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName></Result>
+响应:A001010101009010250000000650000000000000KHKF0300000022016081818113820160818181138454324BIB006:代收付协议不存在，请确保上送的代收付协议信息正确                                                   000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0300000022016081818113820160818181138454324BIB006:代收付协议不存在，请确保上送的代收付协议信息正确                                                   000001            0         0]
+TranFunc=[KHKF03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[BIB006]
+RspMsg=[:代收付协议不存在，请确保上送的代收付协议信息正确                                                   ]
+TrandateTime=[20160818181138]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818181138454324]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:12:33.509
+请求:A001010101009010250000000650000000000302KHKF0300000012016081818123320160818181233410676                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><OrderNumber>20160818181232067371</OrderNumber><AcctNo>11015065535007</AcctNo><BusiType>00000</BusiType><CorpId>E000088334</CorpId><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName></Result>
+响应:A001010101009010250000000650000000000148KHKF0300000022016081818123320160818181233410676000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000148KHKF0300000022016081818123320160818181233410676000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo></Result>]
+TranFunc=[KHKF03]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818181233]
+RspMsgLength=[0000000148]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818181233410676]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:15:42.978
+请求:A001010101009010250000000650000000000178KHKF0400000012016081818154220160818181542276067                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><AcctNo>11015065535007</AcctNo><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo></Result>
+响应:A001010101009010250000000650000000000446KHKF0400000022016081818154220160818181542276067000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo><TranFlowNo>5408621608181122274436</TranFlowNo><Status>40</Status><RetCode>2</RetCode><RetMsg>交易已受理</RetMsg><SettleDate>20160818</SettleDate><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName><Mobile></Mobile><Remark></Remark></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000446KHKF0400000022016081818154220160818181542276067000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo><TranFlowNo>5408621608181122274436</TranFlowNo><Status>40</Status><RetCode>2</RetCode><RetMsg>交易已受理</RetMsg><SettleDate>20160818</SettleDate><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName><Mobile></Mobile><Remark></Remark></Result>]
+TranFunc=[KHKF04]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><OrderNumber>20160818181232067371</OrderNumber><BussFlowNo>8043431608186101091369</BussFlowNo><TranFlowNo>5408621608181122274436</TranFlowNo><Status>40</Status><RetCode>2</RetCode><RetMsg>交易已受理</RetMsg><SettleDate>20160818</SettleDate><CcyCode>RMB</CcyCode><TranAmount>10.00</TranAmount><InAcctNo>6226090000000048</InAcctNo><InAcctName>张三</InAcctName><Mobile></Mobile><Remark></Remark></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818181542]
+RspMsgLength=[0000000446]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818181542276067]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:19:13.929
+请求:A001010101009010250000000650000000000115KHKF0500000012016081818191320160818181913174260                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><QueryDate>20160818</QueryDate><AcctNo>11015065535007</AcctNo></Result>
+响应:A001010101009010250000000650000000000000KHKF0500000022016081818191320160818181913174260YQ9993:字段Date不能为空                                                                                   000001            0         0
+解析结果:
+Data=[A001010101009010250000000650000000000000KHKF0500000022016081818191320160818181913174260YQ9993:字段Date不能为空                                                                                   000001            0         0]
+TranFunc=[KHKF05]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9993]
+RspMsg=[:字段Date不能为空                                                                                   ]
+TrandateTime=[20160818181913]
+RspMsgLength=[0000000000]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818181913174260]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:20:16.478
+请求:A001010101009010250000000650000000000105KHKF0500000012016081818201620160818182016428063                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><Date>20160818</Date><AcctNo>11015065535007</AcctNo></Result>
+响应:A001010101009010250000000650000000000067KHKF0500000022016081818201620160818182016428063000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000067KHKF0500000022016081818201620160818182016428063000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>]
+TranFunc=[KHKF05]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818182016]
+RspMsgLength=[0000000067]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818182016428063]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 18:21:18.295
+请求:A001010101009010250000000650000000000105KHKF0500000012016081818211820160818182118064515                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><Date>20160818</Date><AcctNo>11015065535007</AcctNo></Result>
+响应:A001010101009010250000000650000000000067KHKF0500000022016081818211820160818182118064515000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>
+解析结果:
+Data=[A001010101009010250000000650000000000067KHKF0500000022016081818211820160818182118064515000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>]
+TranFunc=[KHKF05]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><Stt>30</Stt></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818182118]
+RspMsgLength=[0000000067]
+Qydm=[09010250000000650000]
+ThirdLogNo=[20160818182118064515]
+CounterId=[00000]
+
+
+

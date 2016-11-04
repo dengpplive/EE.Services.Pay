@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACA0E9A5-22DC-4C4F-922F-5F669EE8EE5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EE.Services.Pay</RootNamespace>
+    <AssemblyName>EE.Services.Pay</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.5\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BootStart.cs" />
+    <Compile Include="Common\AssistantHelper.cs" />
+    <Compile Include="Common\CommonEnums.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\DynamicXml.cs" />
+    <Compile Include="Common\Ext\Extender.cs" />
+    <Compile Include="Common\GlobalData.cs" />
+    <Compile Include="Common\HttpHelper.cs" />
+    <Compile Include="Common\SecretHelper.cs" />
+    <Compile Include="Common\ServiceInstall.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataAccess\DbHelper.cs" />
+    <Compile Include="DataAccess\MemberInfoDataAccess.cs" />
+    <Compile Include="ExModel\AnswerCode.cs" />
+    <Compile Include="ExModel\BankCode.cs" />
+    <Compile Include="ExModel\DataResult.cs" />
+    <Compile Include="ExModel\DiskFile\CheckBillDiskFile.cs" />
+    <Compile Include="ExModel\DiskFile\DebitDetailFile.cs" />
+    <Compile Include="ExModel\DiskFile\MistakeDiskFile.cs" />
+    <Compile Include="ExModel\DiskFile\OfferDiskFile.cs" />
+    <Compile Include="ExModel\DiskFile\PaymentDetailFile.cs" />
+    <Compile Include="ExModel\DiskFile\SendDiskFile.cs" />
+    <Compile Include="ExModel\KeyCode.cs" />
+    <Compile Include="ExModel\MemberInfo.cs" />
+    <Compile Include="ExModel\NotifyResult.cs" />
+    <Compile Include="ExModel\PayException.cs" />
+    <Compile Include="ExModel\PinganPayConfig.cs" />
+    <Compile Include="ExModel\ProviceCode.cs" />
+    <Compile Include="ExModel\Req\Attachment.cs" />
+    <Compile Include="ExModel\Req\AttachMessageHeader.cs" />
+    <Compile Include="ExModel\Req\BusinessHeader.cs" />
+    <Compile Include="ExModel\Req\MessageHeader.cs" />
+    <Compile Include="ExModel\Req\Req_1010.cs" />
+    <Compile Include="ExModel\Req\Req_1016.cs" />
+    <Compile Include="ExModel\Req\Req_1019.cs" />
+    <Compile Include="ExModel\Req\Req_1020.cs" />
+    <Compile Include="ExModel\Req\Req_1021.cs" />
+    <Compile Include="ExModel\Req\Req_1028.cs" />
+    <Compile Include="ExModel\Req\Req_1029.cs" />
+    <Compile Include="ExModel\Req\Req_1030.cs" />
+    <Compile Include="ExModel\Req\Req_1031.cs" />
+    <Compile Include="ExModel\Req\Req_1301.cs" />
+    <Compile Include="ExModel\Req\Req_1303.cs" />
+    <Compile Include="ExModel\Req\Req_1310.cs" />
+    <Compile Include="ExModel\Req\Req_1312.cs" />
+    <Compile Include="ExModel\Req\Req_1313.cs" />
+    <Compile Include="ExModel\Req\Req_1315.cs" />
+    <Compile Include="ExModel\Req\Req_1316.cs" />
+    <Compile Include="ExModel\Req\Req_1318.cs" />
+    <Compile Include="ExModel\Req\Req_1324.cs" />
+    <Compile Include="ExModel\Req\Req_1326.cs" />
+    <Compile Include="ExModel\Req\Req_1327.cs" />
+    <Compile Include="ExModel\Req\Req_1328.cs" />
+    <Compile Include="ExModel\Req\Req_1329.cs" />
+    <Compile Include="ExModel\Req\Req_1330.cs" />
+    <Compile Include="ExModel\Req\Req_1331.cs" />
+    <Compile Include="ExModel\Req\Req_1332.cs" />
+    <Compile Include="ExModel\Req\Req_1333.cs" />
+    <Compile Include="ExModel\Req\Req_1342.cs" />
+    <Compile Include="ExModel\Req\Req_1343.cs" />
+    <Compile Include="ExModel\Req\Req_1344.cs" />
+    <Compile Include="ExModel\Req\Req_1348.cs" />
+    <Compile Include="ExModel\Req\Req_1349.cs" />
+    <Compile Include="ExModel\Req\Req_1350.cs" />
+    <Compile Include="ExModel\Req\Req_4001.cs" />
+    <Compile Include="ExModel\Req\Req_400101.cs" />
+    <Compile Include="ExModel\Req\Req_4002.cs" />
+    <Compile Include="ExModel\Req\Req_4004.cs" />
+    <Compile Include="ExModel\Req\Req_400401.cs" />
+    <Compile Include="ExModel\Req\Req_4005.cs" />
+    <Compile Include="ExModel\Req\Req_4006.cs" />
+    <Compile Include="ExModel\Req\Req_4008.cs" />
+    <Compile Include="ExModel\Req\Req_4009.cs" />
+    <Compile Include="ExModel\Req\Req_4010.cs" />
+    <Compile Include="ExModel\Req\Req_4011.cs" />
+    <Compile Include="ExModel\Req\Req_4012.cs" />
+    <Compile Include="ExModel\Req\Req_4013.cs" />
+    <Compile Include="ExModel\Req\Req_4014.cs" />
+    <Compile Include="ExModel\Req\Req_4015.cs" />
+    <Compile Include="ExModel\Req\Req_4016.cs" />
+    <Compile Include="ExModel\Req\Req_4017.cs" />
+    <Compile Include="ExModel\Req\Req_4018.cs" />
+    <Compile Include="ExModel\Req\Req_401802.cs" />
+    <Compile Include="ExModel\Req\Req_4019.cs" />
+    <Compile Include="ExModel\Req\Req_4020.cs" />
+    <Compile Include="ExModel\Req\Req_4021.cs" />
+    <Compile Include="ExModel\Req\Req_4022.cs" />
+    <Compile Include="ExModel\Req\Req_4023.cs" />
+    <Compile Include="ExModel\Req\Req_4024.cs" />
+    <Compile Include="ExModel\Req\Req_4025.cs" />
+    <Compile Include="ExModel\Req\Req_4027.cs" />
+    <Compile Include="ExModel\Req\Req_4034.cs" />
+    <Compile Include="ExModel\Req\Req_4047.cs" />
+    <Compile Include="ExModel\Req\Req_4048.cs" />
+    <Compile Include="ExModel\Req\Req_4052.cs" />
+    <Compile Include="ExModel\Req\Req_4054.cs" />
+    <Compile Include="ExModel\Req\Req_4055.cs" />
+    <Compile Include="ExModel\Req\Req_4056.cs" />
+    <Compile Include="ExModel\Req\Req_4057.cs" />
+    <Compile Include="ExModel\Req\Req_4058.cs" />
+    <Compile Include="ExModel\Req\Req_4059.cs" />
+    <Compile Include="ExModel\Req\Req_F001.cs" />
+    <Compile Include="ExModel\Req\Req_F002.cs" />
+    <Compile Include="ExModel\Req\Req_FILE01.cs" />
+    <Compile Include="ExModel\Req\Req_FILE03.cs" />
+    <Compile Include="ExModel\Req\Req_FILE04.cs" />
+    <Compile Include="ExModel\Req\Req_KHKF01.cs" />
+    <Compile Include="ExModel\Req\Req_KHKF02.cs" />
+    <Compile Include="ExModel\Req\Req_KHKF03.cs" />
+    <Compile Include="ExModel\Req\Req_KHKF04.cs" />
+    <Compile Include="ExModel\Req\Req_KHKF05.cs" />
+    <Compile Include="ExModel\Res\Result_4011.cs" />
+    <Compile Include="ExModel\Res\Res_1010.cs" />
+    <Compile Include="ExModel\Res\Res_1016.cs" />
+    <Compile Include="ExModel\Res\Res_1019.cs" />
+    <Compile Include="ExModel\Res\Res_1020.cs" />
+    <Compile Include="ExModel\Res\Res_1021.cs" />
+    <Compile Include="ExModel\Res\Res_1028.cs" />
+    <Compile Include="ExModel\Res\Res_1029.cs" />
+    <Compile Include="ExModel\Res\Res_1030.cs" />
+    <Compile Include="ExModel\Res\Res_1031.cs" />
+    <Compile Include="ExModel\Res\Res_1301.cs" />
+    <Compile Include="ExModel\Res\Res_1303.cs" />
+    <Compile Include="ExModel\Res\Res_1310.cs" />
+    <Compile Include="ExModel\Res\Res_1312.cs" />
+    <Compile Include="ExModel\Res\Res_1313.cs" />
+    <Compile Include="ExModel\Res\Res_1315.cs" />
+    <Compile Include="ExModel\Res\Res_1316.cs" />
+    <Compile Include="ExModel\Res\Res_1318.cs" />
+    <Compile Include="ExModel\Res\Res_1324.cs" />
+    <Compile Include="ExModel\Res\Res_1325.cs" />
+    <Compile Include="ExModel\Res\Res_1326.cs" />
+    <Compile Include="ExModel\Res\Res_1327.cs" />
+    <Compile Include="ExModel\Res\Res_1328.cs" />
+    <Compile Include="ExModel\Res\Res_1329.cs" />
+    <Compile Include="ExModel\Res\Res_1330.cs" />
+    <Compile Include="ExModel\Res\Res_1331.cs" />
+    <Compile Include="ExModel\Res\Res_1332.cs" />
+    <Compile Include="ExModel\Res\Res_1333.cs" />
+    <Compile Include="ExModel\Res\Res_1342.cs" />
+    <Compile Include="ExModel\Res\Res_1343.cs" />
+    <Compile Include="ExModel\Res\Res_1344.cs" />
+    <Compile Include="ExModel\Res\Res_1348.cs" />
+    <Compile Include="ExModel\Res\Res_1349.cs" />
+    <Compile Include="ExModel\Res\Res_1350.cs" />
+    <Compile Include="ExModel\Res\Res_4001.cs" />
+    <Compile Include="ExModel\Res\Res_400101.cs" />
+    <Compile Include="ExModel\Res\Res_4002.cs" />
+    <Compile Include="ExModel\Res\Res_4004.cs" />
+    <Compile Include="ExModel\Res\Res_400401.cs" />
+    <Compile Include="ExModel\Res\Res_4005.cs" />
+    <Compile Include="ExModel\Res\Res_4006.cs" />
+    <Compile Include="ExModel\Res\Res_4008.cs" />
+    <Compile Include="ExModel\Res\Res_4009.cs" />
+    <Compile Include="ExModel\Res\Res_4010.cs" />
+    <Compile Include="ExModel\Res\Res_4012.cs" />
+    <Compile Include="ExModel\Res\Res_4013.cs" />
+    <Compile Include="ExModel\Res\Res_4014.cs" />
+    <Compile Include="ExModel\Res\Res_4015.cs" />
+    <Compile Include="ExModel\Res\Res_4016.cs" />
+    <Compile Include="ExModel\Res\Res_4017.cs" />
+    <Compile Include="ExModel\Res\Res_4018.cs" />
+    <Compile Include="ExModel\Res\Res_401802.cs" />
+    <Compile Include="ExModel\Res\Res_4019.cs" />
+    <Compile Include="ExModel\Res\Res_4020.cs" />
+    <Compile Include="ExModel\Res\Res_4021.cs" />
+    <Compile Include="ExModel\Res\Res_4022.cs" />
+    <Compile Include="ExModel\Res\Res_4023.cs" />
+    <Compile Include="ExModel\Res\Res_4024.cs" />
+    <Compile Include="ExModel\Res\Res_4025.cs" />
+    <Compile Include="ExModel\Res\Res_4027.cs" />
+    <Compile Include="ExModel\Res\Res_4034.cs" />
+    <Compile Include="ExModel\Res\Res_4047.cs" />
+    <Compile Include="ExModel\Res\Res_4048.cs" />
+    <Compile Include="ExModel\Res\Res_4052.cs" />
+    <Compile Include="ExModel\Res\Res_4054.cs" />
+    <Compile Include="ExModel\Res\Res_4055.cs" />
+    <Compile Include="ExModel\Res\Res_4056.cs" />
+    <Compile Include="ExModel\Res\Res_4057.cs" />
+    <Compile Include="ExModel\Res\Res_4058.cs" />
+    <Compile Include="ExModel\Res\Res_4059.cs" />
+    <Compile Include="ExModel\Res\Res_F001.cs" />
+    <Compile Include="ExModel\Res\Res_FILE02.cs" />
+    <Compile Include="ExModel\Res\Res_FILE03.cs" />
+    <Compile Include="ExModel\Res\Res_KHKF01.cs" />
+    <Compile Include="ExModel\Res\Res_KHKF02.cs" />
+    <Compile Include="ExModel\Res\Res_KHKF03.cs" />
+    <Compile Include="ExModel\Res\Res_KHKF04.cs" />
+    <Compile Include="ExModel\Res\Res_KHKF05.cs" />
+    <Compile Include="InertnetVer\BankEnterpriseDirectInterface.cs" />
+    <Compile Include="InertnetVer\SpotTranInterface.cs" />
+    <Compile Include="InertnetVer\CrossLineFastPaymentInterface.cs" />
+    <Compile Include="InertnetVer\BuildReqOrRes\BuildMessageResBody.cs" />
+    <Compile Include="InertnetVer\BuildReqOrRes\BuildMessageReqBody.cs" />
+    <Compile Include="Common\FileHelper.cs" />
+    <Compile Include="Common\ConfigManage.cs" />
+    <Compile Include="Common\ExHashTable.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="InertnetVer\HttpNotify\HttpServer.cs" />
+    <Compile Include="InertnetVer\INotifyHandler.cs" />
+    <Compile Include="InertnetVer\ReceiveBankReq\MessageHandler.cs" />
+    <Compile Include="InertnetVer\ReceiveBankReq\TcpServer.cs" />
+    <Compile Include="Common\BankInterface.cs" />
+    <Compile Include="Common\ErpClient.cs" />
+    <Compile Include="Model\DiskFile\CheckBillDiskFile.cs" />
+    <Compile Include="Model\DiskFile\MistakeDiskFile.cs" />
+    <Compile Include="Model\DiskFile\OfferDiskFile.cs" />
+    <Compile Include="Model\DiskFile\SendDiskFile.cs" />
+    <Compile Include="Model\Req\Req_1010.cs" />
+    <Compile Include="Model\Req\Req_1016.cs" />
+    <Compile Include="Model\Req\Req_1019.cs" />
+    <Compile Include="Model\Req\Req_1020.cs" />
+    <Compile Include="Model\Req\Req_1021.cs" />
+    <Compile Include="Model\Req\Req_1028.cs" />
+    <Compile Include="Model\Req\Req_1029.cs" />
+    <Compile Include="Model\Req\Req_1030.cs" />
+    <Compile Include="Model\Req\Req_1031.cs" />
+    <Compile Include="Model\Req\Req_1301.cs" />
+    <Compile Include="Model\Req\Req_1303.cs" />
+    <Compile Include="Model\Req\Req_1310.cs" />
+    <Compile Include="Model\Req\Req_1312.cs" />
+    <Compile Include="Model\Req\Req_1313.cs" />
+    <Compile Include="Model\Req\Req_1315.cs" />
+    <Compile Include="Model\Req\Req_1316.cs" />
+    <Compile Include="Model\Req\Req_1318.cs" />
+    <Compile Include="Model\Req\Req_1324.cs" />
+    <Compile Include="Model\Req\Req_1326.cs" />
+    <Compile Include="Model\Req\Req_1327.cs" />
+    <Compile Include="Model\Req\Req_1328.cs" />
+    <Compile Include="Model\Req\Req_1329.cs" />
+    <Compile Include="Model\Req\Req_1330.cs" />
+    <Compile Include="Model\Req\Req_1331.cs" />
+    <Compile Include="Model\Req\Req_1332.cs" />
+    <Compile Include="Model\Req\Req_1333.cs" />
+    <Compile Include="Model\Req\Req_1342.cs" />
+    <Compile Include="Model\Req\Req_1343.cs" />
+    <Compile Include="Model\Req\Req_1344.cs" />
+    <Compile Include="Model\Req\Req_1348.cs" />
+    <Compile Include="Model\Req\Req_1349.cs" />
+    <Compile Include="Model\Req\Req_1350.cs" />
+    <Compile Include="Model\Req\Req_4001.cs" />
+    <Compile Include="Model\Req\Req_400101.cs" />
+    <Compile Include="Model\Req\Req_4002.cs" />
+    <Compile Include="Model\Req\Req_4004.cs" />
+    <Compile Include="Model\Req\Req_400401.cs" />
+    <Compile Include="Model\Req\Req_4005.cs" />
+    <Compile Include="Model\Req\Req_4006.cs" />
+    <Compile Include="Model\Req\Req_4008.cs" />
+    <Compile Include="Model\Req\Req_4009.cs" />
+    <Compile Include="Model\Req\Req_4010.cs" />
+    <Compile Include="Model\Req\Req_4011.cs" />
+    <Compile Include="Model\Req\Req_4012.cs" />
+    <Compile Include="Model\Req\Req_4013.cs" />
+    <Compile Include="Model\Req\Req_4014.cs" />
+    <Compile Include="Model\Req\Req_4015.cs" />
+    <Compile Include="Model\Req\Req_4016.cs" />
+    <Compile Include="Model\Req\Req_4017.cs" />
+    <Compile Include="Model\Req\Req_4018.cs" />
+    <Compile Include="Model\Req\Req_401802.cs" />
+    <Compile Include="Model\Req\Req_4019.cs" />
+    <Compile Include="Model\Req\Req_4020.cs" />
+    <Compile Include="Model\Req\Req_4021.cs" />
+    <Compile Include="Model\Req\Req_4022.cs" />
+    <Compile Include="Model\Req\Req_4023.cs" />
+    <Compile Include="Model\Req\Req_4024.cs" />
+    <Compile Include="Model\Req\Req_4025.cs" />
+    <Compile Include="Model\Req\Req_4027.cs" />
+    <Compile Include="Model\Req\Req_4034.cs" />
+    <Compile Include="Model\Req\Req_4047.cs" />
+    <Compile Include="Model\Req\Req_4048.cs" />
+    <Compile Include="Model\Req\Req_4052.cs" />
+    <Compile Include="Model\Req\Req_4054.cs" />
+    <Compile Include="Model\Req\Req_4055.cs" />
+    <Compile Include="Model\Req\Req_4056.cs" />
+    <Compile Include="Model\Req\Req_4057.cs" />
+    <Compile Include="Model\Req\Req_4058.cs" />
+    <Compile Include="Model\Req\Req_4059.cs" />
+    <Compile Include="Model\Req\Req_F001.cs" />
+    <Compile Include="Model\Req\Req_F002.cs" />
+    <Compile Include="Model\Req\Req_FILE01.cs" />
+    <Compile Include="Model\Req\Req_FILE03.cs" />
+    <Compile Include="Model\Req\Req_FILE04.cs" />
+    <Compile Include="Model\Req\Req_KHKF01.cs" />
+    <Compile Include="Model\Req\Req_KHKF02.cs" />
+    <Compile Include="Model\Req\Req_KHKF03.cs" />
+    <Compile Include="Model\Req\Req_KHKF04.cs" />
+    <Compile Include="Model\Req\Req_KHKF05.cs" />
+    <Compile Include="Model\Res\Res_1342.cs" />
+    <Compile Include="Model\Res\Result_4011.cs" />
+    <Compile Include="Model\Res\Res_1010.cs" />
+    <Compile Include="Model\Res\Res_1016.cs" />
+    <Compile Include="Model\Res\Res_1019.cs" />
+    <Compile Include="Model\Res\Res_1020.cs" />
+    <Compile Include="Model\Res\Res_1021.cs" />
+    <Compile Include="Model\Res\Res_1028.cs" />
+    <Compile Include="Model\Res\Res_1029.cs" />
+    <Compile Include="Model\Res\Res_1030.cs" />
+    <Compile Include="Model\Res\Res_1031.cs" />
+    <Compile Include="Model\Res\Res_1301.cs" />
+    <Compile Include="Model\Res\Res_1303.cs" />
+    <Compile Include="Model\Res\Res_1310.cs" />
+    <Compile Include="Model\Res\Res_1312.cs" />
+    <Compile Include="Model\Res\Res_1313.cs" />
+    <Compile Include="Model\Res\Res_1315.cs" />
+    <Compile Include="Model\Res\Res_1316.cs" />
+    <Compile Include="Model\Res\Res_1318.cs" />
+    <Compile Include="Model\Res\Res_1324.cs" />
+    <Compile Include="Model\Res\Res_1325.cs" />
+    <Compile Include="Model\Res\Res_1326.cs" />
+    <Compile Include="Model\Res\Res_1327.cs" />
+    <Compile Include="Model\Res\Res_1328.cs" />
+    <Compile Include="Model\Res\Res_1329.cs" />
+    <Compile Include="Model\Res\Res_1330.cs" />
+    <Compile Include="Model\Res\Res_1331.cs" />
+    <Compile Include="Model\Res\Res_1332.cs" />
+    <Compile Include="Model\Res\Res_1333.cs" />
+    <Compile Include="Model\Res\Res_1343.cs" />
+    <Compile Include="Model\Res\Res_1344.cs" />
+    <Compile Include="Model\Res\Res_1348.cs" />
+    <Compile Include="Model\Res\Res_1349.cs" />
+    <Compile Include="Model\Res\Res_1350.cs" />
+    <Compile Include="Model\Res\Res_4001.cs" />
+    <Compile Include="Model\Res\Res_400101.cs" />
+    <Compile Include="Model\Res\Res_4002.cs" />
+    <Compile Include="Model\Res\Res_4004.cs" />
+    <Compile Include="Model\Res\Res_400401.cs" />
+    <Compile Include="Model\Res\Res_4005.cs" />
+    <Compile Include="Model\Res\Res_4006.cs" />
+    <Compile Include="Model\Res\Res_4008.cs" />
+    <Compile Include="Model\Res\Res_4009.cs" />
+    <Compile Include="Model\Res\Res_4010.cs" />
+    <Compile Include="Model\Res\Res_4012.cs" />
+    <Compile Include="Model\Res\Res_4013.cs" />
+    <Compile Include="Model\Res\Res_4014.cs" />
+    <Compile Include="Model\Res\Res_4015.cs" />
+    <Compile Include="Model\Res\Res_4016.cs" />
+    <Compile Include="Model\Res\Res_4017.cs" />
+    <Compile Include="Model\Res\Res_4018.cs" />
+    <Compile Include="Model\Res\Res_401802.cs" />
+    <Compile Include="Model\Res\Res_4019.cs" />
+    <Compile Include="Model\Res\Res_4020.cs" />
+    <Compile Include="Model\Res\Res_4021.cs" />
+    <Compile Include="Model\Res\Res_4022.cs" />
+    <Compile Include="Model\Res\Res_4023.cs" />
+    <Compile Include="Model\Res\Res_4024.cs" />
+    <Compile Include="Model\Res\Res_4025.cs" />
+    <Compile Include="Model\Res\Res_4027.cs" />
+    <Compile Include="Model\Res\Res_4034.cs" />
+    <Compile Include="Model\Res\Res_4047.cs" />
+    <Compile Include="Model\Res\Res_4048.cs" />
+    <Compile Include="Model\Res\Res_4052.cs" />
+    <Compile Include="Model\Res\Res_4054.cs" />
+    <Compile Include="Model\Res\Res_4055.cs" />
+    <Compile Include="Model\Res\Res_4056.cs" />
+    <Compile Include="Model\Res\Res_4057.cs" />
+    <Compile Include="Model\Res\Res_4058.cs" />
+    <Compile Include="Model\Res\Res_4059.cs" />
+    <Compile Include="Model\Res\Res_F001.cs" />
+    <Compile Include="Model\Res\Res_FILE02.cs" />
+    <Compile Include="Model\Res\Res_FILE03.cs" />
+    <Compile Include="Model\Res\Res_KHKF01.cs" />
+    <Compile Include="Model\Res\Res_KHKF02.cs" />
+    <Compile Include="Model\Res\Res_KHKF03.cs" />
+    <Compile Include="Model\Res\Res_KHKF04.cs" />
+    <Compile Include="Model\Res\Res_KHKF05.cs" />
+    <Compile Include="PayTestDemo\PayHttpHandler.cs" />
+    <Compile Include="PayTestDemo\PayNotifyProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\edtFTPnet.dll" />
+    <Content Include="PayTestDemo\memberinfo.sql" />
+    <Content Include="XmlConfig\AnswerList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\BankCode.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\PinganPayConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlConfig\Province.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

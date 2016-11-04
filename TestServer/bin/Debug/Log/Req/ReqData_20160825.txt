@@ -1,0 +1,342 @@
+时间:2016-08-25 17:18:41.316
+请求:A001010101001020630000000020000000000053SC00  00000012016082517184120160825171841714318                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result></Result>
+响应:
+解析结果:
+Data=[]
+TranFunc=[]
+TargetSystem=[]
+BodyMsg=[]
+RspCode=[INT000]
+RspMsg=[]
+TrandateTime=[]
+RspMsgLength=[0]
+Qydm=[]
+ThirdLogNo=[]
+CounterId=[]
+
+
+
+时间:2016-08-25 17:28:56.823
+请求:A001010101001020630000000020000000000053SC00  00000012016082517285620160825172856548386                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result></Result>
+响应:A001010101001020630000000020000000000000SC00  00000022016082517285620160825172856548386YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0
+解析结果:
+Data=[A001010101001020630000000020000000000000SC00  00000022016082517285620160825172856548386YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0]
+TranFunc=[SC00]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业没有开通此交易（无账户）                                                                       ]
+TrandateTime=[20160825172856]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825172856548386]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:29:35.777
+请求:A001010101001020630000000020000000000053SC00  00000012016082517293520160825172935061750                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result></Result>
+响应:A001010101001020630000000020000000000000SC00  00000022016082517293520160825172935061750YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0
+解析结果:
+Data=[A001010101001020630000000020000000000000SC00  00000022016082517293520160825172935061750YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0]
+TranFunc=[SC00]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业没有开通此交易（无账户）                                                                       ]
+TrandateTime=[20160825172935]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825172935061750]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:31:33.114
+请求:A0010101010010206300000000200000000001284001  00000012016082517313320160825173131848067                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><Account>11015065535007</Account><CcyType>C</CcyType><CcyCode>RMB</CcyCode></Result>
+响应:A0010101010010206300000000200000000000004001  00000022016082517313320160825173131848067YQ9990:企业本账户没有开通此交易                                                                           000001            0         0
+解析结果:
+Data=[A0010101010010206300000000200000000000004001  00000022016082517313320160825173131848067YQ9990:企业本账户没有开通此交易                                                                           000001            0         0]
+TranFunc=[4001]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业本账户没有开通此交易                                                                           ]
+TrandateTime=[20160825173133]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825173131848067]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:33:08.916
+请求:A0010101010010206300000000200000000001284001  00000012016082517330820160825173307765106                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><Account>11009692398603</Account><CcyType>C</CcyType><CcyCode>RMB</CcyCode></Result>
+响应:A0010101010010206300000000200000000004134001  00000022016082517330820160825173307765106000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><CcyType></CcyType><AccountName>平安测试六零零零三四一三七一零三</AccountName><Balance>29127806820.88</Balance><TotalAmount>29127806820.88</TotalAmount><AccountType></AccountType><AccountStatus>A</AccountStatus><BankName></BankName><LastBalance>29127806895.88</LastBalance><HoldBalance>0.00</HoldBalance></Result>
+解析结果:
+Data=[A0010101010010206300000000200000000004134001  00000022016082517330820160825173307765106000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><CcyType></CcyType><AccountName>平安测试六零零零三四一三七一零三</AccountName><Balance>29127806820.88</Balance><TotalAmount>29127806820.88</TotalAmount><AccountType></AccountType><AccountStatus>A</AccountStatus><BankName></BankName><LastBalance>29127806895.88</LastBalance><HoldBalance>0.00</HoldBalance></Result>]
+TranFunc=[4001]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><CcyType></CcyType><AccountName>平安测试六零零零三四一三七一零三</AccountName><Balance>29127806820.88</Balance><TotalAmount>29127806820.88</TotalAmount><AccountType></AccountType><AccountStatus>A</AccountStatus><BankName></BankName><LastBalance>29127806895.88</LastBalance><HoldBalance>0.00</HoldBalance></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160825173308]
+RspMsgLength=[0000000413]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825173307765106]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:34:27.535
+请求:A0010101010010206300000000200000000001134012  00000012016082517342720160825173426527406                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><Account>11009692398603</Account><RptDate>20160514</RptDate></Result>
+响应:A0010101010010206300000000200000000002224012  00000022016082517342720160825173426527406000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><RptDate>20160514</RptDate><CcyType>C</CcyType><HisBalance>0.00</HisBalance><HisBookBalance>0.00</HisBookBalance></Result>
+解析结果:
+Data=[A0010101010010206300000000200000000002224012  00000022016082517342720160825173426527406000000:交易受理成功                                                                                       000001            0         0<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><RptDate>20160514</RptDate><CcyType>C</CcyType><HisBalance>0.00</HisBalance><HisBookBalance>0.00</HisBookBalance></Result>]
+TranFunc=[4012]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK" ?><Result><Account>11009692398603</Account><CcyCode>RMB</CcyCode><RptDate>20160514</RptDate><CcyType>C</CcyType><HisBalance>0.00</HisBalance><HisBookBalance>0.00</HisBookBalance></Result>]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160825173427]
+RspMsgLength=[0000000222]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825173426527406]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:42:08.309
+请求:A0010101010010206300000000200000000000944016  00000012016082517420820160825174205262435                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><LNNO>1</LNNO></Result>
+响应:A0010101010010206300000000200000000000004016  00000012016082517420820160825174205262435E00006:服务方响应错误                                                                                     000001            00000000000
+解析结果:
+Data=[A0010101010010206300000000200000000000004016  00000012016082517420820160825174205262435E00006:服务方响应错误                                                                                     000001            00000000000]
+TranFunc=[4016]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00006]
+RspMsg=[:服务方响应错误                                                                                     ]
+TrandateTime=[20160825174208]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825174205262435]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:43:24.365
+请求:A0010101010010206300000000200000000000944016  00000012016082517432420160825174320631063                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><LNNO>1</LNNO></Result>
+响应:A0010101010010206300000000200000000000004016  00000012016082517432420160825174320631063E00006:服务方响应错误                                                                                     000001            00000000000
+解析结果:
+Data=[A0010101010010206300000000200000000000004016  00000012016082517432420160825174320631063E00006:服务方响应错误                                                                                     000001            00000000000]
+TranFunc=[4016]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00006]
+RspMsg=[:服务方响应错误                                                                                     ]
+TrandateTime=[20160825174324]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825174320631063]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:45:25.040
+请求:A0010101010010206300000000200000000000944016  00000012016082517452320160825174512623570                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><LNNO>1</LNNO></Result>
+响应:A0010101010010206300000000200000000000004016  00000012016082517452320160825174512623570E00006:服务方响应错误                                                                                     000001            00000000000
+解析结果:
+Data=[A0010101010010206300000000200000000000004016  00000012016082517452320160825174512623570E00006:服务方响应错误                                                                                     000001            00000000000]
+TranFunc=[4016]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00006]
+RspMsg=[:服务方响应错误                                                                                     ]
+TrandateTime=[20160825174523]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825174512623570]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:51:35.988
+请求:A0010101010010206300000000200000000000964025  00000012016082517513520160825175133781706                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><ACSEQ>1</ACSEQ></Result>
+响应:A0010101010010206300000000200000000000004025  00000012016082517513520160825175133781706E00006:服务方响应错误                                                                                     000001            00000000000
+解析结果:
+Data=[A0010101010010206300000000200000000000004025  00000012016082517513520160825175133781706E00006:服务方响应错误                                                                                     000001            00000000000]
+TranFunc=[4025]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00006]
+RspMsg=[:服务方响应错误                                                                                     ]
+TrandateTime=[20160825175135]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825175133781706]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 17:54:43.629
+请求:A0010101010010206300000000200000000000944016  00000012016082517544320160825175441487827                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><LNNO>1</LNNO></Result>
+响应:
+解析结果:
+Data=[]
+TranFunc=[]
+TargetSystem=[]
+BodyMsg=[]
+RspCode=[INT000]
+RspMsg=[]
+TrandateTime=[]
+RspMsgLength=[0]
+Qydm=[]
+ThirdLogNo=[]
+CounterId=[]
+
+
+
+时间:2016-08-25 17:55:37.361
+请求:A0010101010010206300000000200000000000944016  00000012016082517553720160825175535865876                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ACNO>11009692398603</ACNO><LNNO>1</LNNO></Result>
+响应:A0010101010010206300000000200000000000004016  00000012016082517553720160825175535865876E00006:服务方响应错误                                                                                     000001            00000000000
+解析结果:
+Data=[A0010101010010206300000000200000000000004016  00000012016082517553720160825175535865876E00006:服务方响应错误                                                                                     000001            00000000000]
+TranFunc=[4016]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00006]
+RspMsg=[:服务方响应错误                                                                                     ]
+TrandateTime=[20160825175537]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825175535865876]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:01:50.875
+请求:A0010101010010206300000000200000000001704011  00000012016082518015020160825180149150635                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><AcctNo>11009692398603</AcctNo><PageNo>0</PageNo><JournalNo>0</JournalNo><LogCount>0</LogCount><CcyCode>RMB</CcyCode></Result>
+响应:A0010101010010206300000000200000000000004011  00000022016082518015020160825180149150635EBLN00:EBLN0000                                                                                           000001            0         0
+解析结果:
+Data=[A0010101010010206300000000200000000000004011  00000022016082518015020160825180149150635EBLN00:EBLN0000                                                                                           000001            0         0]
+TranFunc=[4011]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[EBLN00]
+RspMsg=[:EBLN0000                                                                                           ]
+TrandateTime=[20160825180150]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825180149150635]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:03:07.446
+请求:A0010101010010206300000000200000000002534009  00000012016082518030720160825180306064636                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ThirdVoucher>20160825180606463635</ThirdVoucher><CcyCode>RMB</CcyCode><OpFlag>0</OpFlag><AcctNo>11002873390701</AcctNo><StockNo>bb</StockNo><PwdEncryType>0</PwdEncryType><TranAmount>0.01</TranAmount></Result>
+响应:A0010101010010206300000000200000000000004009  00000022016082518030720160825180306064636YQ9990:企业本账户没有开通此交易                                                                           000001            0         0
+解析结果:
+Data=[A0010101010010206300000000200000000000004009  00000022016082518030720160825180306064636YQ9990:企业本账户没有开通此交易                                                                           000001            0         0]
+TranFunc=[4009]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业本账户没有开通此交易                                                                           ]
+TrandateTime=[20160825180307]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825180306064636]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:03:56.694
+请求:A0010101010010206300000000200000000008884027  00000012016082518035620160825180354065806                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><ThirdVoucher>20160825185406580638</ThirdVoucher><totalCts>2</totalCts><totalAmt>4</totalAmt><CcyCode>RMB</CcyCode><OutAcctNo>11009692398603</OutAcctNo><OutAcctName>平安测试六零零零三四一三七一零三</OutAcctName><HOResultSet4018R><SThirdVoucher>20160825180354068001</SThirdVoucher><InAcctNo>11002923034501</InAcctNo><InAcctName>平安测试六零零零三三八二八五九八</InAcctName><InAcctBankName>0821</InAcctBankName><TranAmount>2</TranAmount><UseEx>111</UseEx><UnionFlag>1</UnionFlag><AddrFlag>1</AddrFlag><SysFlag>N</SysFlag></HOResultSet4018R><HOResultSet4018R><SThirdVoucher>20160825180354068002</SThirdVoucher><InAcctNo>11014501996009</InAcctNo><InAcctName>bb</InAcctName><InAcctBankName>xxxx</InAcctBankName><TranAmount>2</TranAmount><UseEx>111</UseEx><UnionFlag>1</UnionFlag><AddrFlag>1</AddrFlag><SysFlag>N</SysFlag></HOResultSet4018R></Result>
+响应:A0010101010010206300000000200000000000004027  00000022016082518035620160825180354065806YQ9990:企业本账户没有开通此交易                                                                           000001            0         0
+解析结果:
+Data=[A0010101010010206300000000200000000000004027  00000022016082518035620160825180354065806YQ9990:企业本账户没有开通此交易                                                                           000001            0         0]
+TranFunc=[4027]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业本账户没有开通此交易                                                                           ]
+TrandateTime=[20160825180356]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825180354065806]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:05:06.839
+请求:A00101010100102063000000002000000000020540010100000012016082518050620160825180505356186                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><AccountNo>6226090000000048</AccountNo><AccountName>张三</AccountName><CertType>1</CertType><CertNo>510265790128303</CertNo><Mobile>18100000000</Mobile></Result>
+响应:A00101010100102063000000002000000000000040010100000022016082518050620160825180505356186YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0
+解析结果:
+Data=[A00101010100102063000000002000000000000040010100000022016082518050620160825180505356186YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0]
+TranFunc=[400101]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业没有开通此交易（无账户）                                                                       ]
+TrandateTime=[20160825180506]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825180505356186]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:05:36.587
+请求:A001010101001020630000000020000000000053DP00  00000012016082518053620160825180536428642                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result></Result>
+响应:A001010101001020630000000020000000000000DP00  00000012016082518053620160825180536428642YQ0000:无法处理的请求,请核对交易码                                                                        000001                     00
+解析结果:
+Data=[A001010101001020630000000020000000000000DP00  00000012016082518053620160825180536428642YQ0000:无法处理的请求,请核对交易码                                                                        000001                     00]
+TranFunc=[DP00]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ0000]
+RspMsg=[:无法处理的请求,请核对交易码                                                                        ]
+TrandateTime=[20160825180536]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825180536428642]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:15:46.639
+请求:A001010101001020630000000020000000000053SC00  00000012016082518154620160825181546857481                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result></Result>
+响应:A001010101001020630000000020000000000000SC00  00000022016082518154620160825181546857481YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0
+解析结果:
+Data=[A001010101001020630000000020000000000000SC00  00000022016082518154620160825181546857481YQ9990:企业没有开通此交易（无账户）                                                                       000001            0         0]
+TranFunc=[SC00]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9990]
+RspMsg=[:企业没有开通此交易（无账户）                                                                       ]
+TrandateTime=[20160825181546]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825181546857481]
+CounterId=[00000]
+
+
+
+时间:2016-08-25 18:16:42.847
+请求:A0010101010010206300000000200000000000794006  00000012016082518164220160825181641465874                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TranAmount>0</TranAmount></Result>
+响应:A0010101010010206300000000200000000000004006  00000022016082518164220160825181641465874YQ9999:null                                                                                               000001            0         0
+解析结果:
+Data=[A0010101010010206300000000200000000000004006  00000022016082518164220160825181641465874YQ9999:null                                                                                               000001            0         0]
+TranFunc=[4006]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[YQ9999]
+RspMsg=[:null                                                                                               ]
+TrandateTime=[20160825181642]
+RspMsgLength=[0000000000]
+Qydm=[01020630000000020000]
+ThirdLogNo=[20160825181641465874]
+CounterId=[00000]
+
+
+

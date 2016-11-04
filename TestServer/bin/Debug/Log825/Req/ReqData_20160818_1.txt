@@ -1,0 +1,814 @@
+时间:2016-08-18 10:31:01.084
+请求:A0010301018877                0000000237000000     012016081810310120160818103101675846999999                                                                                                    000001                     001343010               20160818103101999999                                          000000115Test020160818103101675846887711014971070008&02142081009&平安测试99615&1&350181198612299615&2&6230580000000003108&1&平安银行&&&18782938121&&&&&&&
+响应:A0010301018877                0000000150000000Test0022016081810281520160818103101675846ERR111证件信息不符                                                                                        000001            000000000001343020               20160818102815ERR111证件信息不符                              000000028Test020160818103101675846887702142081009&16081715236178&&
+解析结果:
+Data=[A0010301018877                0000000150000000Test0022016081810281520160818103101675846ERR111证件信息不符                                                                                        000001            000000000001343020               20160818102815ERR111证件信息不符                              000000028Test020160818103101675846887702142081009&16081715236178&&]
+TranFunc=[1343]
+TargetSystem=[03]
+BodyMsg=[02142081009&16081715236178&&]
+RspCode=[ERR111]
+RspMsg=[证件信息不符                                                                                        ]
+TrandateTime=[20160818102815]
+RspMsgLength=[150]
+Qydm=[8877]
+ThirdLogNo=[20160818103101675846]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 10:38:55.485
+请求:A0010301018877                0000000249000000     012016081810385520160818103855828376999999                                                                                                    000001                     001343010               20160818103855999999                                          000000127Test020160818103855828376887711014971070008&02142081009&平安测试99615&1&350181198612299615&2&6230580000000003108&1&平安银行&&307584007998&18782938121&&&&&&&
+响应:A0010301018877                0000000150000000Test0022016081810360920160818103855828376ERR111证件信息不符                                                                                        000001            000000000001343020               20160818103609ERR111证件信息不符                              000000028Test020160818103855828376887702142081009&16081715236227&&
+解析结果:
+Data=[A0010301018877                0000000150000000Test0022016081810360920160818103855828376ERR111证件信息不符                                                                                        000001            000000000001343020               20160818103609ERR111证件信息不符                              000000028Test020160818103855828376887702142081009&16081715236227&&]
+TranFunc=[1343]
+TargetSystem=[03]
+BodyMsg=[02142081009&16081715236227&&]
+RspCode=[ERR111]
+RspMsg=[证件信息不符                                                                                        ]
+TrandateTime=[20160818103609]
+RspMsgLength=[150]
+Qydm=[8877]
+ThirdLogNo=[20160818103855828376]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 10:40:44.593
+请求:A0010301018877                0000000250000000     012016081810404420160818104044120618999999                                                                                                    000001                     001343010               20160818104044999999                                          000000128Test020160818104044120618887711014971070008&021420810010&平安测试99615&1&350181198612299615&2&6230580000000003108&1&平安银行&&307584007998&18782938121&&&&&&&
+响应:A0010301018877                0000000151000000Test0022016081810375820160818104044120618000000交易成功                                                                                            000001            000000000001343020               20160818103758000000交易成功                                  000000029Test0201608181040441206188877021420810010&16081715236235&&
+解析结果:
+Data=[A0010301018877                0000000151000000Test0022016081810375820160818104044120618000000交易成功                                                                                            000001            000000000001343020               20160818103758000000交易成功                                  000000029Test0201608181040441206188877021420810010&16081715236235&&]
+TranFunc=[1343]
+TargetSystem=[03]
+BodyMsg=[021420810010&16081715236235&&]
+RspCode=[000000]
+RspMsg=[交易成功                                                                                            ]
+TrandateTime=[20160818103758]
+RspMsgLength=[151]
+Qydm=[8877]
+ThirdLogNo=[20160818104044120618]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 10:43:10.840
+请求:A0010301018877                0000000152000000     012016081810431020160818104310538351999999                                                                                                    000001                     001344010               20160818104310999999                                          000000030Test02016081810431053835188771&16081715236235&111111&0.00&&
+响应:A0010301018887                000000018400000011716022016081810375852016081810404412061000000交易成功                                                                                            000001            000000000001344020               20160818103758000000交易成功                                  00000006211716520160818104044120618887716081810903207&0&021420810010&888800000181213&11014972682004&
+解析结果:
+Data=[A0010301018887                000000018400000011716022016081810375852016081810404412061000000交易成功                                                                                            000001            000000000001344020               20160818103758000000交易成功                                  00000006211716520160818104044120618887716081810903207&0&021420810010&888800000181213&11014972682004&]
+TranFunc=[1344]
+TargetSystem=[03]
+BodyMsg=[716081810903207&0&021420810010&888800000181213&11014972682004&]
+RspCode=[000000]
+RspMsg=[交易成功                                                                                            ]
+TrandateTime=[20160818103758]
+RspMsgLength=[184]
+Qydm=[8887]
+ThirdLogNo=[52016081810404412061]
+CounterId=[11716]
+
+
+
+时间:2016-08-18 10:47:57.959
+请求:A0010301018877                0000000152000000     012016081810475720160818104757318520999999                                                                                                    000001                     001344010               20160818104757999999                                          000000030Test02016081810475731852088771&16081715236235&111111&0.00&&
+响应:A0010301018877                0000000142000000Test0022016081810451120160818104757318520ERR137验证信息不存在                                                                                      000001            000000000001344020               20160818104511ERR137验证信息不存在                            000000020Test020160818104757318520887716081715236235&&&&&&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081810451120160818104757318520ERR137验证信息不存在                                                                                      000001            000000000001344020               20160818104511ERR137验证信息不存在                            000000020Test020160818104757318520887716081715236235&&&&&&]
+TranFunc=[1344]
+TargetSystem=[03]
+BodyMsg=[16081715236235&&&&&&]
+RspCode=[ERR137]
+RspMsg=[验证信息不存在                                                                                      ]
+TrandateTime=[20160818104511]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818104757318520]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 11:49:13.462
+请求:A0010301018877                0000000152000000     012016081811491320160818114908548736999999                                                                                                    000001                     001344010               20160818114913999999                                          000000030Test02016081811490854873688771&16081715236718&111111&0.00&&
+响应:A0010301015887                000000018400000011716022016081811451852016081811475980606000000交易成功                                                                                            000001            000000000001344020               20160818114518000000交易成功                                  00000006211716520160818114759806065887716081810903549&0&021420810015&888800000181292&11014972688008&
+解析结果:
+Data=[A0010301015887                000000018400000011716022016081811451852016081811475980606000000交易成功                                                                                            000001            000000000001344020               20160818114518000000交易成功                                  00000006211716520160818114759806065887716081810903549&0&021420810015&888800000181292&11014972688008&]
+TranFunc=[1344]
+TargetSystem=[03]
+BodyMsg=[716081810903549&0&021420810015&888800000181292&11014972688008&]
+RspCode=[000000]
+RspMsg=[交易成功                                                                                            ]
+TrandateTime=[20160818114518]
+RspMsgLength=[184]
+Qydm=[5887]
+ThirdLogNo=[52016081811475980606]
+CounterId=[11716]
+
+
+
+时间:2016-08-18 11:52:18.251
+请求:A0010301018877                0000000201000000     012016081811521820160818115218476065999999                                                                                                    000001                     001020010               20160818115218999999                                          000000079Test020160818115218476065887711014971070008&021420810015&888800000181292&平安测试996155&11014972688008&1020&
+响应:A0010301018877                0000000132000000Test0022016081811493220160818115218476065ERR055输入账号错误                                                                                        000001            000000000001020020               20160818114932ERR055输入账号错误                              000000010Test02016081811521847606588770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081811493220160818115218476065ERR055输入账号错误                                                                                        000001            000000000001020020               20160818114932ERR055输入账号错误                              000000010Test02016081811521847606588770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[ERR055]
+RspMsg=[输入账号错误                                                                                        ]
+TrandateTime=[20160818114932]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818115218476065]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 11:53:14.519
+请求:A0010301018877                0000000172000000     012016081811531420160818115314876123999999                                                                                                    000001                     001020010               20160818115314999999                                          000000050Test020160818115314876123887711014971070008&021420810015&&&11014972688008&1020&
+响应:A0010301018877                0000000132000000Test0022016081811502820160818115314876123ERR055输入账号错误                                                                                        000001            000000000001020020               20160818115028ERR055输入账号错误                              000000010Test02016081811531487612388770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081811502820160818115314876123ERR055输入账号错误                                                                                        000001            000000000001020020               20160818115028ERR055输入账号错误                              000000010Test02016081811531487612388770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[ERR055]
+RspMsg=[输入账号错误                                                                                        ]
+TrandateTime=[20160818115028]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818115314876123]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 11:53:35.514
+请求:A0010301018877                0000000160000000     012016081811533520160818115335248126999999                                                                                                    000001                     001020010               20160818115335999999                                          000000038Test020160818115335248126887711014971070008&&&&11014972688008&1020&
+响应:A0010301018877                0000000132000000Test0022016081811504920160818115335248126ERR936交易要素不全,不能没有查询条件!                                                                      000001            000000000001020020               20160818115049ERR936交易要素不全,不能没有查询条件!            000000010Test02016081811533524812688770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081811504920160818115335248126ERR936交易要素不全,不能没有查询条件!                                                                      000001            000000000001020020               20160818115049ERR936交易要素不全,不能没有查询条件!            000000010Test02016081811533524812688770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[ERR936]
+RspMsg=[交易要素不全,不能没有查询条件!                                                                      ]
+TrandateTime=[20160818115049]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818115335248126]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 11:54:07.921
+请求:A0010301018877                0000000172000000     012016081811540720160818115407806106999999                                                                                                    000001                     001020010               20160818115407999999                                          000000050Test020160818115407806106887711014971070008&021420810015&&&11014972688008&1020&
+响应:A0010301018877                0000000132000000Test0022016081811512120160818115407806106ERR055输入账号错误                                                                                        000001            000000000001020020               20160818115121ERR055输入账号错误                              000000010Test02016081811540780610688770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081811512120160818115407806106ERR055输入账号错误                                                                                        000001            000000000001020020               20160818115121ERR055输入账号错误                              000000010Test02016081811540780610688770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[ERR055]
+RspMsg=[输入账号错误                                                                                        ]
+TrandateTime=[20160818115121]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818115407806106]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 13:22:49.562
+请求:A00101010100101079900009999000
+      0000000121FILE0100000012016081813224920160818132249713826                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818132213615737</TradeSn><FileName>text.txt</FileName></Result>
+响应:
+解析结果:
+Data=[]
+TranFunc=[]
+TargetSystem=[]
+BodyMsg=[]
+RspCode=[INT000]
+RspMsg=[]
+TrandateTime=[]
+RspMsgLength=[0]
+Qydm=[]
+ThirdLogNo=[]
+CounterId=[]
+
+
+
+时间:2016-08-18 13:24:26.927
+请求:A001010101001010799000099990000000000121FILE0100000012016081813242620160818132426640675                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818132422060616</TradeSn><FileName>text.txt</FileName></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081813242620160818132426640675E90004:请求处理错误                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081813242620160818132426640675E90004:请求处理错误                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E90004]
+RspMsg=[:请求处理错误                                                                                       ]
+TrandateTime=[20160818132426]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818132426640675]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:28:52.809
+请求:A001010101001010799000099990000000000209FILE0100000012016081813285220160818132852424060                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818132842187571</TradeSn><FileName>text.txt</FileName><FilePath>D:\Project\EEServices\sources\EE.Services.Pay\TestServer\bin\Debug\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081813285220160818132852424060E90004:请求处理错误                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081813285220160818132852424060E90004:请求处理错误                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E90004]
+RspMsg=[:请求处理错误                                                                                       ]
+TrandateTime=[20160818132852]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818132852424060]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:30:49.411
+请求:A001010101001010799000099990000000000145FILE0100000012016081813304920160818133049815215                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818133048213720</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081813304920160818133049815215000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081813304920160818133049815215000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818133049]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818133049815215]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:36:13.893
+请求:A001010101001010799000099990000000000092FILE0200000012016081813361320160818133048213720                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818133048213720</TradeSn></Result>
+响应:A001010101001010799000099990000000001981FILE0200000012016081813361320160818133048213720000000:交易成功                                                                                           000001            00000000000<?xml version="1.0" encoding="GBK"?>
+<Result><Desc>上传文件成功</Desc><Code>F0</Code><TradeSn>20160818133048213720</TradeSn><FileName>text.txt</FileName><Action>1</Action><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd><SignData>MIIE3AYJKoZIhvcNAQcCoIIEzTCCBMkCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCCA88wggPLMIICs6ADAgECAgx257BMiA5k3tPzVxMwDQYJKoZIhvcNAQEFBQAwITELMAkGA1UEBhMCQ04xEjAQBgNVBAMMCVNEQlRFU1RDQTAeFw0xMjA4MjEwMjEyMjBaFw0xNzA4MjAwMjEyMjBaMIGPMQ0wCwYDVQQGHgQAQwBOMRMwEQYDVQQKHgoAUwBEAEIAQwBBMQ8wDQYDVQQLHgYAUwBEAEIxHzAdBgNVBAseFgBFAG4AdABlAHIAcAByAGkAcwBlAHMxNzA1BgNVBAMeLgBTAEQAQgBAADcAMAA4ADAANQBAADAAOAAwADUAQABZAFEAMAAwADAAMQA1ADUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAI0Rtkn3T+3u0mCXQBkhqLaiwUGNb31jmDRXL1Th7T/HXIjxJ4jgPGZGPul+lZlZ93C3zFmcR76mqoA19uqdRKn5hgcJQeh4sRXowjukxx3QATW3YhvhvgcoGe3zSGHYajq6KCGewIWoeawzaAN7KXiwn9579Xd5m2T24bnvMfFHAgMBAAGjggEWMIIBEjAPBgNVHRMBAQAEBTADAQEAMA4GA1UdDwEBAAQEAwIA8DAUBglghkgBhvhCAQEBAQAEBAMCAIAwIgYDVR0jAQEABBgwFoAU0sFgrDXmu9wlFKSMJbQgYEEtmBEwTgYIKwYBBQUHAQEBAQAEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNlcjBDBgNVHR8BAQAEOTA3MDWgM6Axhi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNybDAgBgNVHQ4BAQAEFgQUOz1pyyzvKyNpOkW9+7CAq4Jp0+UwDQYJKoZIhvcNAQEFBQADggEBAAZ9pL1kbhMK1dTGTHuU+4zUC5kFmekpzlH+s4eeWMQazq6UcTLXre1Jg48Al1yX8TFYP/sA1tAQBqGLMky79/hRdpEUWkfVvHA6xKs0ECryXPaojBuBI4fAOd4We0W4zo4CrBuuibyNdFTIbyPeQVAr/EAYbLEOmde/s3d/ehFK1gX26eakfpU/7yqchOv516TyvDey8B/HbND3jepsJZ8j9GXD05U/r7N/KIWTk4DE5M7iBbQqQmZU2od3n/UFrUxFPUsbOXEkMU5LIhkTaMOSh+ZdrHZ3f6dwVphlYymyrgrrmYId38QAWFCFNTwwH5Ld5HKJ1LxHDODaK3c98YQxgdYwgdMCAQEwMTAhMQswCQYDVQQGEwJDTjESMBAGA1UEAwwJU0RCVEVTVENBAgx257BMiA5k3tPzVxMwCQYFKw4DAhoFADANBgkqhkiG9w0BAQEFAASBgHhI/jpA7Zx7EWlTX4Jh6WzttFFPNNR1yP3TQkbWOjuAglT+rIfILMyE64TL7f2gEY+MW/kdNdZGtdxQQ9Lj2OVq3vcNxs8QzdENtVjJHfjiHPlpcxdIueISNYOiO+E4VmQyiBczYOmp53ndMAyhb+g9uS+SUJ1FGDZZlNgAX/Dw</SignData><HashData>1A9B9508B6003B68DDFE03A9C8CBC4BD4388339B</HashData></Result>
+解析结果:
+Data=[A001010101001010799000099990000000001981FILE0200000012016081813361320160818133048213720000000:交易成功                                                                                           000001            00000000000<?xml version="1.0" encoding="GBK"?>
+<Result><Desc>上传文件成功</Desc><Code>F0</Code><TradeSn>20160818133048213720</TradeSn><FileName>text.txt</FileName><Action>1</Action><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd><SignData>MIIE3AYJKoZIhvcNAQcCoIIEzTCCBMkCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCCA88wggPLMIICs6ADAgECAgx257BMiA5k3tPzVxMwDQYJKoZIhvcNAQEFBQAwITELMAkGA1UEBhMCQ04xEjAQBgNVBAMMCVNEQlRFU1RDQTAeFw0xMjA4MjEwMjEyMjBaFw0xNzA4MjAwMjEyMjBaMIGPMQ0wCwYDVQQGHgQAQwBOMRMwEQYDVQQKHgoAUwBEAEIAQwBBMQ8wDQYDVQQLHgYAUwBEAEIxHzAdBgNVBAseFgBFAG4AdABlAHIAcAByAGkAcwBlAHMxNzA1BgNVBAMeLgBTAEQAQgBAADcAMAA4ADAANQBAADAAOAAwADUAQABZAFEAMAAwADAAMQA1ADUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAI0Rtkn3T+3u0mCXQBkhqLaiwUGNb31jmDRXL1Th7T/HXIjxJ4jgPGZGPul+lZlZ93C3zFmcR76mqoA19uqdRKn5hgcJQeh4sRXowjukxx3QATW3YhvhvgcoGe3zSGHYajq6KCGewIWoeawzaAN7KXiwn9579Xd5m2T24bnvMfFHAgMBAAGjggEWMIIBEjAPBgNVHRMBAQAEBTADAQEAMA4GA1UdDwEBAAQEAwIA8DAUBglghkgBhvhCAQEBAQAEBAMCAIAwIgYDVR0jAQEABBgwFoAU0sFgrDXmu9wlFKSMJbQgYEEtmBEwTgYIKwYBBQUHAQEBAQAEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNlcjBDBgNVHR8BAQAEOTA3MDWgM6Axhi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNybDAgBgNVHQ4BAQAEFgQUOz1pyyzvKyNpOkW9+7CAq4Jp0+UwDQYJKoZIhvcNAQEFBQADggEBAAZ9pL1kbhMK1dTGTHuU+4zUC5kFmekpzlH+s4eeWMQazq6UcTLXre1Jg48Al1yX8TFYP/sA1tAQBqGLMky79/hRdpEUWkfVvHA6xKs0ECryXPaojBuBI4fAOd4We0W4zo4CrBuuibyNdFTIbyPeQVAr/EAYbLEOmde/s3d/ehFK1gX26eakfpU/7yqchOv516TyvDey8B/HbND3jepsJZ8j9GXD05U/r7N/KIWTk4DE5M7iBbQqQmZU2od3n/UFrUxFPUsbOXEkMU5LIhkTaMOSh+ZdrHZ3f6dwVphlYymyrgrrmYId38QAWFCFNTwwH5Ld5HKJ1LxHDODaK3c98YQxgdYwgdMCAQEwMTAhMQswCQYDVQQGEwJDTjESMBAGA1UEAwwJU0RCVEVTVENBAgx257BMiA5k3tPzVxMwCQYFKw4DAhoFADANBgkqhkiG9w0BAQEFAASBgHhI/jpA7Zx7EWlTX4Jh6WzttFFPNNR1yP3TQkbWOjuAglT+rIfILMyE64TL7f2gEY+MW/kdNdZGtdxQQ9Lj2OVq3vcNxs8QzdENtVjJHfjiHPlpcxdIueISNYOiO+E4VmQyiBczYOmp53ndMAyhb+g9uS+SUJ1FGDZZlNgAX/Dw</SignData><HashData>1A9B9508B6003B68DDFE03A9C8CBC4BD4388339B</HashData></Result>]
+TranFunc=[FILE02]
+TargetSystem=[01]
+BodyMsg=[<?xml version="1.0" encoding="GBK"?>
+<Result><Desc>上传文件成功</Desc><Code>F0</Code><TradeSn>20160818133048213720</TradeSn><FileName>text.txt</FileName><Action>1</Action><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd><SignData>MIIE3AYJKoZIhvcNAQcCoIIEzTCCBMkCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCCA88wggPLMIICs6ADAgECAgx257BMiA5k3tPzVxMwDQYJKoZIhvcNAQEFBQAwITELMAkGA1UEBhMCQ04xEjAQBgNVBAMMCVNEQlRFU1RDQTAeFw0xMjA4MjEwMjEyMjBaFw0xNzA4MjAwMjEyMjBaMIGPMQ0wCwYDVQQGHgQAQwBOMRMwEQYDVQQKHgoAUwBEAEIAQwBBMQ8wDQYDVQQLHgYAUwBEAEIxHzAdBgNVBAseFgBFAG4AdABlAHIAcAByAGkAcwBlAHMxNzA1BgNVBAMeLgBTAEQAQgBAADcAMAA4ADAANQBAADAAOAAwADUAQABZAFEAMAAwADAAMQA1ADUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAI0Rtkn3T+3u0mCXQBkhqLaiwUGNb31jmDRXL1Th7T/HXIjxJ4jgPGZGPul+lZlZ93C3zFmcR76mqoA19uqdRKn5hgcJQeh4sRXowjukxx3QATW3YhvhvgcoGe3zSGHYajq6KCGewIWoeawzaAN7KXiwn9579Xd5m2T24bnvMfFHAgMBAAGjggEWMIIBEjAPBgNVHRMBAQAEBTADAQEAMA4GA1UdDwEBAAQEAwIA8DAUBglghkgBhvhCAQEBAQAEBAMCAIAwIgYDVR0jAQEABBgwFoAU0sFgrDXmu9wlFKSMJbQgYEEtmBEwTgYIKwYBBQUHAQEBAQAEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNlcjBDBgNVHR8BAQAEOTA3MDWgM6Axhi9odHRwOi8vMTAuMTQuNTIuMzM6Mjg4ODAvZG93bmxvYWQvU0RCVEVTVENBLmNybDAgBgNVHQ4BAQAEFgQUOz1pyyzvKyNpOkW9+7CAq4Jp0+UwDQYJKoZIhvcNAQEFBQADggEBAAZ9pL1kbhMK1dTGTHuU+4zUC5kFmekpzlH+s4eeWMQazq6UcTLXre1Jg48Al1yX8TFYP/sA1tAQBqGLMky79/hRdpEUWkfVvHA6xKs0ECryXPaojBuBI4fAOd4We0W4zo4CrBuuibyNdFTIbyPeQVAr/EAYbLEOmde/s3d/ehFK1gX26eakfpU/7yqchOv516TyvDey8B/HbND3jepsJZ8j9GXD05U/r7N/KIWTk4DE5M7iBbQqQmZU2od3n/UFrUxFPUsbOXEkMU5LIhkTaMOSh+ZdrHZ3f6dwVphlYymyrgrrmYId38QAWFCFNTwwH5Ld5HKJ1LxHDODaK3c98YQxgdYwgdMCAQEwMTAhMQswCQYDVQQGEwJDTjESMBAGA1UEAwwJU0RCVEVTVENBAgx257BMiA5k3tPzVxMwCQYFKw4DAhoFADANBgkqhkiG9w0BAQEFAASBgHhI/jpA7Zx7EWlTX4Jh6WzttFFPNNR1yP3TQkbWOjuAglT+rIfILMyE64TL7f2gEY+MW/kdNdZGtdxQQ9Lj2OVq3vcNxs8QzdENtVjJHfjiHPlpcxdIueISNYOiO+E4VmQyiBczYOmp53ndMAyhb+g9uS+SUJ1FGDZZlNgAX/Dw</SignData><HashData>1A9B9508B6003B68DDFE03A9C8CBC4BD4388339B</HashData></Result>]
+RspCode=[000000]
+RspMsg=[:交易成功                                                                                           ]
+TrandateTime=[20160818133613]
+RspMsgLength=[0000001981]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818133048213720]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:41:39.072
+请求:A001010101001010799000099990000000000200FILE0300000012016081813413920160818133048213720                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818133048213720</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813413920160818133048213720E00001:重复的TranSn                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813413920160818133048213720E00001:重复的TranSn                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00001]
+RspMsg=[:重复的TranSn                                                                                       ]
+TrandateTime=[20160818134139]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818133048213720]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:42:32.254
+请求:A001010101001010799000099990000000000200FILE0300000012016081813423220160818134228246317                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818134228246317</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813423220160818134228246317000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813423220160818134228246317000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818134232]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818134228246317]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:43:16.656
+请求:A001010101001010799000099990000000000200FILE0300000012016081813431620160818134313437425                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818134313437425</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813431620160818134313437425000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813431620160818134313437425000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818134316]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818134313437425]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:47:23.817
+请求:A001010101001010799000099990000000000200FILE0300000012016081813472320160818134719063474                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818134719063474</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813472320160818134719063474000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813472320160818134719063474000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818134723]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818134719063474]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:49:01.457
+请求:A001010101001010799000099990000000000200FILE0300000012016081813490120160818134858765106                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818134858765106</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813490120160818134858765106000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813490120160818134858765106000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818134901]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818134858765106]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:55:19.004
+请求:A001010101001010799000099990000000000200FILE0300000012016081813551920160818135516862461                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818135516862461</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081813551920160818135516862461000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081813551920160818135516862461000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818135519]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818135516862461]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:55:52.476
+请求:A001010101001010799000099990000000000145FILE0100000012016081813555220160818135552751582                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818135549784568</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081813555220160818135552751582000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081813555220160818135552751582000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818135552]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818135552751582]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 13:58:34.228
+请求:A001010101001010799000099990000000000146FILE0100000012016081813583420160818135834640606                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818135832840616</TradeSn><FileName>text1.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081813583420160818135834640606000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081813583420160818135834640606000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818135834]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818135834640606]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 14:27:18.952
+请求:A001010101001010799000099990000000000146FILE0100000012016081814271820160818142718857412                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818142717234234</TradeSn><FileName>text1.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081814271820160818142718857412000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081814271820160818142718857412000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818142718]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818142718857412]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 14:28:49.236
+请求:A001010101001010799000099990000000000146FILE0100000012016081814284920160818142849831824                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818142848767528</TradeSn><FileName>text1.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081814284920160818142849831824000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081814284920160818142849831824000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818142849]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818142849831824]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 14:35:31.076
+请求:A001010101001010799000099990000000000146FILE0100000012016081814353120160818143531832406                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818143530174267</TradeSn><FileName>text1.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081814353120160818143531832406000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081814353120160818143531832406000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818143531]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818143531832406]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 14:36:29.434
+请求:A001010101001010799000099990000000000146FILE0100000012016081814362920160818143629587606                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818143628806806</TradeSn><FileName>text1.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101001010799000099990000000000000FILE0100000012016081814362920160818143629587606000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0100000012016081814362920160818143629587606000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818143629]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818143629587606]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 14:39:57.086
+请求:A001010101001010799000099990000000000200FILE0300000012016081814395720160818143956284064                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818143956284064</TradeSn><FileName>text.txt</FileName><FilePath>d:\</FilePath><RandomPwd>HCI21DGwBOBuksK+SREOhIYfmPD/woqv</RandomPwd></Result>
+响应:A001010101001010799000099990000000000000FILE0300000012016081814395720160818143956284064000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101001010799000099990000000000000FILE0300000012016081814395720160818143956284064000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE03]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818143957]
+RspMsgLength=[0000000000]
+Qydm=[01010799000099990000]
+ThirdLogNo=[20160818143956284064]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 15:46:59.031
+请求:A0010301018877                0000000253000000     012016081815465920160818154658626262999999                                                                                                    000001                     001332010               20160818154659999999                                          000000131Test020160818154658626262887711014971070008&2&888800000174433&02142081007&888800000174532&02142081009&50.00&0.00&RMB&201608040708_7&order_201608040709_7&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081815441320160818154658626262ERR127订单号重复                                                                                          000001            000000000001332020               20160818154413ERR127订单号重复                                000000020Test020160818154658626262887716081715238152&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081815441320160818154658626262ERR127订单号重复                                                                                          000001            000000000001332020               20160818154413ERR127订单号重复                                000000020Test020160818154658626262887716081715238152&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238152&1332&]
+RspCode=[ERR127]
+RspMsg=[订单号重复                                                                                          ]
+TrandateTime=[20160818154413]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818154658626262]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 15:47:46.731
+请求:A0010301018877                0000000257000000     012016081815474620160818154746614580999999                                                                                                    000001                     001332010               20160818154746999999                                          000000135Test020160818154746614580887711014971070008&2&888800000174433&02142081007&888800000174532&02142081009&50.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081815450320160818154746614580ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154503ERR044可用余额不足                              000000020Test020160818154746614580887716081715238176&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081815450320160818154746614580ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154503ERR044可用余额不足                              000000020Test020160818154746614580887716081715238176&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238176&1332&]
+RspCode=[ERR044]
+RspMsg=[可用余额不足                                                                                        ]
+TrandateTime=[20160818154503]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818154746614580]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 15:48:34.090
+请求:A0010301018877                0000000257000000     012016081815483420160818154834710614999999                                                                                                    000001                     001332010               20160818154834999999                                          000000135Test020160818154834710614887711014971070008&2&888800000174532&02142081009&888800000174433&02142081007&50.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081815454820160818154834710614ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154548ERR044可用余额不足                              000000020Test020160818154834710614887716081715238206&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081815454820160818154834710614ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154548ERR044可用余额不足                              000000020Test020160818154834710614887716081715238206&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238206&1332&]
+RspCode=[ERR044]
+RspMsg=[可用余额不足                                                                                        ]
+TrandateTime=[20160818154548]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818154834710614]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 15:49:09.467
+请求:A0010301018877                0000000256000000     012016081815490920160818154909643068999999                                                                                                    000001                     001332010               20160818154909999999                                          000000134Test020160818154909643068887711014971070008&2&888800000174532&02142081009&888800000174433&02142081007&1.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081815462320160818154909643068ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154623ERR044可用余额不足                              000000020Test020160818154909643068887716081715238209&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081815462320160818154909643068ERR044可用余额不足                                                                                        000001            000000000001332020               20160818154623ERR044可用余额不足                              000000020Test020160818154909643068887716081715238209&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238209&1332&]
+RspCode=[ERR044]
+RspMsg=[可用余额不足                                                                                        ]
+TrandateTime=[20160818154623]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818154909643068]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:02:19.310
+请求:A0010301018877                0000000192000000     012016081816021920160818160203748323999999                                                                                                    000001                     001020010               20160818160219999999                                          000000070Test020160818160203748323887711014971070008&02142081007&888800000174433&测试一&11014890513006&1020&
+响应:A0010301018877                0000000132000000Test0022016081815593320160818160203748323ERR055输入账号错误                                                                                        000001            000000000001020020               20160818155933ERR055输入账号错误                              000000010Test02016081816020374832388770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081815593320160818160203748323ERR055输入账号错误                                                                                        000001            000000000001020020               20160818155933ERR055输入账号错误                              000000010Test02016081816020374832388770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[ERR055]
+RspMsg=[输入账号错误                                                                                        ]
+TrandateTime=[20160818155933]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818160203748323]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:03:37.252
+请求:A0010301018877                0000000201000000     012016081816033720160818160329060606999999                                                                                                    000001                     001020010               20160818160337999999                                          000000079Test020160818160329060606887711014971070008&888800000181282&021420810014&平安测试996154&11014972687009&1020&
+响应:A0010301018877                0000000132000000Test0022016081816005120160818160329060606000000交易成功                                                                                            000001            000000000001020020               20160818160051000000交易成功                                  000000010Test02016081816032906060688770.00&1020&
+解析结果:
+Data=[A0010301018877                0000000132000000Test0022016081816005120160818160329060606000000交易成功                                                                                            000001            000000000001020020               20160818160051000000交易成功                                  000000010Test02016081816032906060688770.00&1020&]
+TranFunc=[1020]
+TargetSystem=[03]
+BodyMsg=[0.00&1020&]
+RspCode=[000000]
+RspMsg=[交易成功                                                                                            ]
+TrandateTime=[20160818160051]
+RspMsgLength=[132]
+Qydm=[8877]
+ThirdLogNo=[20160818160329060606]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:10:25.459
+请求:A0010301018877                0000000256000000     012016081816102520160818161025726454999999                                                                                                    000001                     001332010               20160818161025999999                                          000000134Test020160818161025726454887711014971070008&2&888800000174532&02142081009&888800000174433&02142081007&0.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816073920160818161025726454ERR042金额不能小于等于0                                                                                   000001            000000000001332020               20160818160739ERR042金额不能小于等于0                         000000020Test020160818161025726454887716081715238421&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816073920160818161025726454ERR042金额不能小于等于0                                                                                   000001            000000000001332020               20160818160739ERR042金额不能小于等于0                         000000020Test020160818161025726454887716081715238421&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238421&1332&]
+RspCode=[ERR042]
+RspMsg=[金额不能小于等于0                                                                                   ]
+TrandateTime=[20160818160739]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818161025726454]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:11:31.881
+请求:A0010301018877                0000000256000000     012016081816113120160818161131836365999999                                                                                                    000001                     001332010               20160818161131999999                                          000000134Test020160818161131836365887711014971070008&1&888800000174532&02142081009&888800000174433&02142081007&2.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816084520160818161131836365000000交易成功                                                                                            000001            000000000001332020               20160818160845000000交易成功                                  000000020Test020160818161131836365887716081715238426&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816084520160818161131836365000000交易成功                                                                                            000001            000000000001332020               20160818160845000000交易成功                                  000000020Test020160818161131836365887716081715238426&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238426&1332&]
+RspCode=[000000]
+RspMsg=[交易成功                                                                                            ]
+TrandateTime=[20160818160845]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818161131836365]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:12:17.067
+请求:A0010301018877                0000000256000000     012016081816121720160818161217067213999999                                                                                                    000001                     001332010               20160818161217999999                                          000000134Test020160818161217067213887711014971070008&1&888800000174532&02142081009&11014972698001&021420810017&2.00&0.00&RMB&201608040708_8&order_201608040709_8&test&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816093120160818161217067213ERR031输入的子账户不存在                                                                                  000001            000000000001332020               20160818160931ERR031输入的子账户不存在                        000000020Test020160818161217067213887716081715238431&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816093120160818161217067213ERR031输入的子账户不存在                                                                                  000001            000000000001332020               20160818160931ERR031输入的子账户不存在                        000000020Test020160818161217067213887716081715238431&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238431&1332&]
+RspCode=[ERR031]
+RspMsg=[输入的子账户不存在                                                                                  ]
+TrandateTime=[20160818160931]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818161217067213]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:23:18.132
+请求:A0010301018877                0000000253000000     012016081816231820160818162318637873999999                                                                                                    000001                     001332010               20160818162318999999                                          000000131Test020160818162318637873887711014971070008&1&888800000174532&02142081009&888800000181522&021420810017&2.00&0.00&RMB&201608040708_8&order_201608040709_8&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816203220160818162318637873ERR127订单号重复                                                                                          000001            000000000001332020               20160818162032ERR127订单号重复                                000000020Test020160818162318637873887716081715238525&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816203220160818162318637873ERR127订单号重复                                                                                          000001            000000000001332020               20160818162032ERR127订单号重复                                000000020Test020160818162318637873887716081715238525&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238525&1332&]
+RspCode=[ERR127]
+RspMsg=[订单号重复                                                                                          ]
+TrandateTime=[20160818162032]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818162318637873]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:24:01.075
+请求:A0010301018877                0000000253000000     012016081816240120160818162401852562999999                                                                                                    000001                     001332010               20160818162401999999                                          000000131Test020160818162401852562887711014971070008&1&888800000174532&02142081009&888800000181522&021420810017&2.00&0.00&RMB&201608040708_9&order_201608040709_8&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816211520160818162401852562EB4044非法账号                                                                                            000001            000000000001332020               20160818162115EB4044非法账号                                  000000020Test020160818162401852562887716081715238529&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816211520160818162401852562EB4044非法账号                                                                                            000001            000000000001332020               20160818162115EB4044非法账号                                  000000020Test020160818162401852562887716081715238529&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238529&1332&]
+RspCode=[EB4044]
+RspMsg=[非法账号                                                                                            ]
+TrandateTime=[20160818162115]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818162401852562]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:29:21.542
+请求:A0010301018877                0000000253000000     012016081816292120160818162921785352999999                                                                                                    000001                     001332010               20160818162921999999                                          000000131Test020160818162921785352887711014971070008&1&888800000174532&02142081009&888800000181522&021420810017&2.00&0.00&RMB&201608040708_9&order_201608040709_8&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816263520160818162921785352EB4044非法账号                                                                                            000001            000000000001332020               20160818162635EB4044非法账号                                  000000020Test020160818162921785352887716081715238567&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816263520160818162921785352EB4044非法账号                                                                                            000001            000000000001332020               20160818162635EB4044非法账号                                  000000020Test020160818162921785352887716081715238567&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238567&1332&]
+RspCode=[EB4044]
+RspMsg=[非法账号                                                                                            ]
+TrandateTime=[20160818162635]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818162921785352]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:53:07.202
+请求:A0010301018877                0000000253000000     012016081816530720160818165307106721999999                                                                                                    000001                     001332010               20160818165307999999                                          000000131Test020160818165307106721887711014971070008&1&888800000174532&02142081009&888800000181522&021420810017&2.00&0.00&RMB&201608040708_9&order_201608040709_8&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816502120160818165307106721EB4044非法账号                                                                                            000001            000000000001332020               20160818165021EB4044非法账号                                  000000020Test020160818165307106721887716081715238801&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816502120160818165307106721EB4044非法账号                                                                                            000001            000000000001332020               20160818165021EB4044非法账号                                  000000020Test020160818165307106721887716081715238801&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238801&1332&]
+RspCode=[EB4044]
+RspMsg=[非法账号                                                                                            ]
+TrandateTime=[20160818165021]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818165307106721]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:56:05.606
+请求:A0010301018877                0000000253000000     012016081816560520160818165605343840999999                                                                                                    000001                     001332010               20160818165605999999                                          000000131Test020160818165605343840887711014971070008&1&888800000174532&02142081009&888800000181522&021420810017&2.00&0.00&RMB&201608040708_9&order_201608040709_8&&&1332&
+响应:A0010301018877                0000000142000000Test0022016081816531920160818165605343840EB4044非法账号                                                                                            000001            000000000001332020               20160818165319EB4044非法账号                                  000000020Test020160818165605343840887716081715238827&1332&
+解析结果:
+Data=[A0010301018877                0000000142000000Test0022016081816531920160818165605343840EB4044非法账号                                                                                            000001            000000000001332020               20160818165319EB4044非法账号                                  000000020Test020160818165605343840887716081715238827&1332&]
+TranFunc=[1332]
+TargetSystem=[03]
+BodyMsg=[16081715238827&1332&]
+RspCode=[EB4044]
+RspMsg=[非法账号                                                                                            ]
+TrandateTime=[20160818165319]
+RspMsgLength=[142]
+Qydm=[8877]
+ThirdLogNo=[20160818165605343840]
+CounterId=[Test0]
+
+
+
+时间:2016-08-18 16:58:50.987
+请求:A001010101009012600000000180000000000146FILE0100000012016081816585020160818165850740640                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818165849418154</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009012600000000180000000000000FILE0100000012016081816585020160818165850740640E90004:请求处理错误                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009012600000000180000000000000FILE0100000012016081816585020160818165850740640E90004:请求处理错误                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E90004]
+RspMsg=[:请求处理错误                                                                                       ]
+TrandateTime=[20160818165850]
+RspMsgLength=[0000000000]
+Qydm=[09012600000000180000]
+ThirdLogNo=[20160818165850740640]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:02:41.702
+请求:A001010101009012600000000180000000000146FILE0100000012016081817024120160818170241865357                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818165849418154</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009012600000000180000000000000FILE0100000012016081817024120160818170241865357E00001:重复的TranSn                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009012600000000180000000000000FILE0100000012016081817024120160818170241865357E00001:重复的TranSn                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[E00001]
+RspMsg=[:重复的TranSn                                                                                       ]
+TrandateTime=[20160818170241]
+RspMsgLength=[0000000000]
+Qydm=[09012600000000180000]
+ThirdLogNo=[20160818170241865357]
+CounterId=[00000]
+
+
+
+时间:2016-08-18 17:02:55.296
+请求:A001010101009012600000000180000000000146FILE0100000012016081817025520160818170255587831                                                                                                          000001                     00<?xml version="1.0" encoding="GBK"?><Result><TradeSn>20160818170254267068</TradeSn><FileName>text2.txt</FileName><FilePath>d:\</FilePath></Result>
+响应:A001010101009012600000000180000000000000FILE0100000012016081817025520160818170255587831000000:交易受理成功                                                                                       000001            00000000000
+解析结果:
+Data=[A001010101009012600000000180000000000000FILE0100000012016081817025520160818170255587831000000:交易受理成功                                                                                       000001            00000000000]
+TranFunc=[FILE01]
+TargetSystem=[01]
+BodyMsg=[]
+RspCode=[000000]
+RspMsg=[:交易受理成功                                                                                       ]
+TrandateTime=[20160818170255]
+RspMsgLength=[0000000000]
+Qydm=[09012600000000180000]
+ThirdLogNo=[20160818170255587831]
+CounterId=[00000]
+
+
+

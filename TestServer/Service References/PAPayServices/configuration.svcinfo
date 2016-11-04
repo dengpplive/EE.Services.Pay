@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;SpotTranPayServicesSoap&quot; /&gt;" bindingType="basicHttpBinding" name="SpotTranPayServicesSoap" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://115.159.186.113:8688/SpotTranPayServices.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;SpotTranPayServicesSoap&quot; contract=&quot;PAPayServices.SpotTranPayServicesSoap&quot; name=&quot;SpotTranPayServicesSoap&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://115.159.186.113:8688/SpotTranPayServices.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;SpotTranPayServicesSoap&quot; contract=&quot;PAPayServices.SpotTranPayServicesSoap&quot; name=&quot;SpotTranPayServicesSoap&quot; /&gt;" contractName="PAPayServices.SpotTranPayServicesSoap" name="SpotTranPayServicesSoap" />
+  </endpoints>
+</configurationSnapshot>

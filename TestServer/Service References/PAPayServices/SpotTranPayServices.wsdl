@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://demo2.xx3700.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://demo2.xx3700.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://demo2.xx3700.com/">
+      <s:element name="testA">
+        <s:complexType />
+      </s:element>
+      <s:element name="testAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MySoapHeader" type="tns:MySoapHeader" />
+      <s:complexType name="MySoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="_credentialParam" type="tns:CredentialParam" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:complexType name="CredentialParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustRegisterSignYeePayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqView_1343" type="tns:ReqView_1343" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReqView_1343">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustRegisterSignYeePayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustRegisterSignYeePayInterfaceResult" type="tns:Result_1343" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1343">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustErpRegisterSignYeePayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1343" type="tns:Req_1343" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1343">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CpFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BankType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SBankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RegAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustErpRegisterSignYeePayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustErpRegisterSignYeePayInterfaceResult" type="tns:Result_1343" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustRegisterSignYeePayValidateInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqView_1344" type="tns:ReqView_1344" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReqView_1344">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CustRegisterSignYeePayValidateInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustRegisterSignYeePayValidateInterfaceResult" type="tns:Result_1344" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1344">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DealStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RelatedAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SignInOrOutInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1330" type="tns:Req_1330" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1330">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TxDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SignInOrOutInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SignInOrOutInterfaceResult" type="tns:Result_1330" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1330">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1330" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1330">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InMoneyFromTradeNetworkInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1316" type="tns:Req_1316" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1316">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="InAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InAcctIdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InMoneyFromTradeNetworkInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InMoneyFromTradeNetworkInterfaceResult" type="tns:Result_1316" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1316">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1316" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1316">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OutMoneyFromTradeNetworkInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1318" type="tns:Req_1318" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1318">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TranWebName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranOutType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdBankName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdBankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeOutCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OutMoneyFromTradeNetworkInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OutMoneyFromTradeNetworkInterfaceResult" type="tns:Result_1318" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1318">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1318" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1318">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeOutCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrossBankOutMoneyFromTradeNetworkInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1313" type="tns:Req_1313" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1313">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TranWebName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranOutType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdBankName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutAcctIdBankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeOutCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrossBankOutMoneyFromTradeNetworkInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrossBankOutMoneyFromTradeNetworkInterfaceResult" type="tns:Result_1313" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1313">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1313" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1313">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HandFee" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FeeOutCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryBankMemberCapitalStationBalanceInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1010" type="tns:Req_1010" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1010">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SelectFlag" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageNum" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryBankMemberCapitalStationBalanceInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryBankMemberCapitalStationBalanceInterfaceResult" type="tns:Result_1010" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1010">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1010" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1010">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastPage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecordNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountList" type="tns:ArrayOfAccountItem" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAccountItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AccountItem" nillable="true" type="tns:AccountItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AccountItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MainAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalBalance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalFreezeAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QuerySuperviseAccountInfoInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1021" type="tns:Req_1021" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1021">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranWebCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QuerySuperviseAccountInfoInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuerySuperviseAccountInfoInterfaceResult" type="tns:Result_1021" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1021">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1021" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1021">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RecordNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranWebCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranWebName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddr1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddr2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FuncFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpenCustFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurBalance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranOutAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalBalance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalFreeze" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustTotal" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustAvailTotal" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1016" type="tns:Req_1016" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1016">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PageNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceResult" type="tns:Result_1016" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1016">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1016" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1016">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastPage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecordNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpenAccountInfoList" type="tns:ArrayOfOpenAccountInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOpenAccountInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OpenAccountInfo" nillable="true" type="tns:OpenAccountInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OpenAccountInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CounterId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryMemberBankBalanceInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqView_1020" type="tns:ReqView_1020" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReqView_1020">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryMemberBankBalanceInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryMemberBankBalanceInterfaceResult" type="tns:Result_1020" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1020">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryMemberTradeFlowInfoInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1324" type="tns:Req_1324" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1324">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrigThirdLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageNum" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryMemberTradeFlowInfoInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryMemberTradeFlowInfoInterfaceResult" type="tns:Result_1324" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1324">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1324" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1324">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastPage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecordNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TradeFlowiInfoList" type="tns:ArrayOfTradeFlowiInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTradeFlowiInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TradeFlowiInfo" nillable="true" type="tns:TradeFlowiInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TradeFlowiInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryMemberInOutMoneyFlowInfoInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1324" type="tns:Req_1324" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryMemberInOutMoneyFlowInfoInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryMemberInOutMoneyFlowInfoInterfaceResult" type="tns:Result_1325" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1325">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1325" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1325">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TotalCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BeginNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastPage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecordNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccessToGoldTradeInfoList" type="tns:ArrayOfAccessToGoldTradeInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAccessToGoldTradeInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AccessToGoldTradeInfo" nillable="true" type="tns:AccessToGoldTradeInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AccessToGoldTradeInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryPaySerialStatusInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1327" type="tns:Req_1327" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1327">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryPaySerialStatusInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryPaySerialStatusInterfaceResult" type="tns:Result_1327" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1327">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1327" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1327">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChangeDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QuerySubAccountPayResultInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1333" type="tns:Req_1333" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1333">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QuerySubAccountPayResultInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuerySubAccountPayResultInterfaceResult" type="tns:Result_1333" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1333">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1333" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1333">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SerialResult" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HandFee" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryTradeResultByOrderIdInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1342" type="tns:Req_1342" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1342">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryTradeResultByOrderIdInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryTradeResultByOrderIdInterfaceResult" type="tns:Result_1342" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1342">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1342" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1342">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TranStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryBankAuthenticationInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1348" type="tns:Req_1348" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1348">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryBankAuthenticationInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryBankAuthenticationInterfaceResult" type="tns:Result_1348" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1348">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1348" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1348" />
+      <s:element name="QueryReconciliationFilePwdInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1349" type="tns:Req_1349" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1349">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryReconciliationFilePwdInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryReconciliationFilePwdInterfaceResult" type="tns:Result_1349" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1349">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1349" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1349">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FilePSW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileExist" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MemberRechargeInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1350" type="tns:Req_1350" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1350">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MemberRechargeInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberRechargeInterfaceResult" type="tns:Result_1350" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1350">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1350" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1350">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalBalance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalFreezeAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SubAccountPayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1028" type="tns:Req_1028" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1028">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SubAccountPayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubAccountPayInterfaceResult" type="tns:Result_1028" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1028">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1028" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1028">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InCustBalance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutCustBalance" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountReviewPayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1328" type="tns:Req_1328" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1328">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtCont" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountReviewPayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChildAccountReviewPayInterfaceResult" type="tns:Result_1328" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1328">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1328" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1328">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformOperationPayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1331" type="tns:Req_1331" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1331">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PayAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PayFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformOperationPayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlatformOperationPayInterfaceResult" type="tns:Result_1331" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1331">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1331" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1331">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountDirectPayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqView_1329" type="tns:ReqView_1329" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReqView_1329">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtCont" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountDirectPayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChildAccountDirectPayInterfaceResult" type="tns:Result_1329" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1329">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountInDirectPayInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reqView_1332" type="tns:ReqView_1332" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReqView_1332">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OutThirdCustId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InCustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandFee" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaySerialNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtCont" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountInDirectPayInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChildAccountInDirectPayInterfaceResult" type="tns:Result_1332" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1332">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountFrozenOrThawInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1029" type="tns:Req_1029" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1029">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ChildAccountFrozenOrThawInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChildAccountFrozenOrThawInterfaceResult" type="tns:Result_1029" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1029">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1029" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1029">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformChargeOrRefundInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1030" type="tns:Req_1030" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1030">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformChargeOrRefundInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlatformChargeOrRefundInterfaceResult" type="tns:Result_1030" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1030">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1030" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1030">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformPayOrChargeInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="req_1031" type="tns:Req_1031" />
+            <s:element minOccurs="0" maxOccurs="1" name="counterId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Req_1031">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupAcctId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FuncFlag" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustAcctId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdCustId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TranAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="CcyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThirdHtId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PlatformPayOrChargeInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlatformPayOrChargeInterfaceResult" type="tns:Result_1031" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Result_1031">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:Res_1031" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RspMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Res_1031">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FrontLogNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reserve" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCardTypeInterface">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCardTypeInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCardTypeInterfaceResult" type="tns:CardType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CardType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfIdType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfIdType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IdType" nillable="true" type="tns:IdType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IdType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="testASoapIn">
+    <wsdl:part name="parameters" element="tns:testA" />
+  </wsdl:message>
+  <wsdl:message name="testASoapOut">
+    <wsdl:part name="parameters" element="tns:testAResponse" />
+  </wsdl:message>
+  <wsdl:message name="testAMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="CustRegisterSignYeePayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:CustRegisterSignYeePayInterface" />
+  </wsdl:message>
+  <wsdl:message name="CustRegisterSignYeePayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:CustRegisterSignYeePayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustErpRegisterSignYeePayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:CustErpRegisterSignYeePayInterface" />
+  </wsdl:message>
+  <wsdl:message name="CustErpRegisterSignYeePayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:CustErpRegisterSignYeePayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustRegisterSignYeePayValidateInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:CustRegisterSignYeePayValidateInterface" />
+  </wsdl:message>
+  <wsdl:message name="CustRegisterSignYeePayValidateInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:CustRegisterSignYeePayValidateInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignInOrOutInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:SignInOrOutInterface" />
+  </wsdl:message>
+  <wsdl:message name="SignInOrOutInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:SignInOrOutInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="InMoneyFromTradeNetworkInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:InMoneyFromTradeNetworkInterface" />
+  </wsdl:message>
+  <wsdl:message name="InMoneyFromTradeNetworkInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:InMoneyFromTradeNetworkInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="OutMoneyFromTradeNetworkInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:OutMoneyFromTradeNetworkInterface" />
+  </wsdl:message>
+  <wsdl:message name="OutMoneyFromTradeNetworkInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:OutMoneyFromTradeNetworkInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrossBankOutMoneyFromTradeNetworkInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:CrossBankOutMoneyFromTradeNetworkInterface" />
+  </wsdl:message>
+  <wsdl:message name="CrossBankOutMoneyFromTradeNetworkInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:CrossBankOutMoneyFromTradeNetworkInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryBankMemberCapitalStationBalanceInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryBankMemberCapitalStationBalanceInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryBankMemberCapitalStationBalanceInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryBankMemberCapitalStationBalanceInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuerySuperviseAccountInfoInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QuerySuperviseAccountInfoInterface" />
+  </wsdl:message>
+  <wsdl:message name="QuerySuperviseAccountInfoInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QuerySuperviseAccountInfoInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryTimeSlotMemberOpenOrCencelAccountInfoInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberBankBalanceInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryMemberBankBalanceInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberBankBalanceInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryMemberBankBalanceInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberTradeFlowInfoInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryMemberTradeFlowInfoInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberTradeFlowInfoInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryMemberTradeFlowInfoInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberInOutMoneyFlowInfoInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryMemberInOutMoneyFlowInfoInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryMemberInOutMoneyFlowInfoInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryMemberInOutMoneyFlowInfoInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryPaySerialStatusInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryPaySerialStatusInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryPaySerialStatusInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryPaySerialStatusInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuerySubAccountPayResultInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QuerySubAccountPayResultInterface" />
+  </wsdl:message>
+  <wsdl:message name="QuerySubAccountPayResultInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QuerySubAccountPayResultInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryTradeResultByOrderIdInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryTradeResultByOrderIdInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryTradeResultByOrderIdInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryTradeResultByOrderIdInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryBankAuthenticationInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryBankAuthenticationInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryBankAuthenticationInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryBankAuthenticationInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryReconciliationFilePwdInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryReconciliationFilePwdInterface" />
+  </wsdl:message>
+  <wsdl:message name="QueryReconciliationFilePwdInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryReconciliationFilePwdInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="MemberRechargeInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:MemberRechargeInterface" />
+  </wsdl:message>
+  <wsdl:message name="MemberRechargeInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:MemberRechargeInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubAccountPayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:SubAccountPayInterface" />
+  </wsdl:message>
+  <wsdl:message name="SubAccountPayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:SubAccountPayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountReviewPayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:ChildAccountReviewPayInterface" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountReviewPayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:ChildAccountReviewPayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlatformOperationPayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:PlatformOperationPayInterface" />
+  </wsdl:message>
+  <wsdl:message name="PlatformOperationPayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:PlatformOperationPayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountDirectPayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:ChildAccountDirectPayInterface" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountDirectPayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:ChildAccountDirectPayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountInDirectPayInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:ChildAccountInDirectPayInterface" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountInDirectPayInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:ChildAccountInDirectPayInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountFrozenOrThawInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:ChildAccountFrozenOrThawInterface" />
+  </wsdl:message>
+  <wsdl:message name="ChildAccountFrozenOrThawInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:ChildAccountFrozenOrThawInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlatformChargeOrRefundInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:PlatformChargeOrRefundInterface" />
+  </wsdl:message>
+  <wsdl:message name="PlatformChargeOrRefundInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:PlatformChargeOrRefundInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PlatformPayOrChargeInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:PlatformPayOrChargeInterface" />
+  </wsdl:message>
+  <wsdl:message name="PlatformPayOrChargeInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:PlatformPayOrChargeInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCardTypeInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCardTypeInterface" />
+  </wsdl:message>
+  <wsdl:message name="GetCardTypeInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCardTypeInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SpotTranPayServicesSoap">
+    <wsdl:operation name="testA">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;testA&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:testASoapIn" />
+      <wsdl:output message="tns:testASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;【适用个人】 会员注册签约易宝开户和绑定银行卡[1443]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CustRegisterSignYeePayInterfaceSoapIn" />
+      <wsdl:output message="tns:CustRegisterSignYeePayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustErpRegisterSignYeePayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;【适用个人和企业】 会员注册签约易宝开户和绑定银行卡[1443]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CustErpRegisterSignYeePayInterfaceSoapIn" />
+      <wsdl:output message="tns:CustErpRegisterSignYeePayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayValidateInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;会员注册签约易宝-回填验证[1344]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CustRegisterSignYeePayValidateInterfaceSoapIn" />
+      <wsdl:output message="tns:CustRegisterSignYeePayValidateInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignInOrOutInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;签到/签退交易[1330]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SignInOrOutInterfaceSoapIn" />
+      <wsdl:output message="tns:SignInOrOutInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InMoneyFromTradeNetworkInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;入金[1316]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:InMoneyFromTradeNetworkInterfaceSoapIn" />
+      <wsdl:output message="tns:InMoneyFromTradeNetworkInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OutMoneyFromTradeNetworkInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;出金[1318]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:OutMoneyFromTradeNetworkInterfaceSoapIn" />
+      <wsdl:output message="tns:OutMoneyFromTradeNetworkInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrossBankOutMoneyFromTradeNetworkInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;跨行出金[1313]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:CrossBankOutMoneyFromTradeNetworkInterfaceSoapIn" />
+      <wsdl:output message="tns:CrossBankOutMoneyFromTradeNetworkInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankMemberCapitalStationBalanceInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查银行端会员资金台帐余额[1010]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryBankMemberCapitalStationBalanceInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryBankMemberCapitalStationBalanceInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySuperviseAccountInfoInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;监管账户信息查询[1021]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QuerySuperviseAccountInfoInterfaceSoapIn" />
+      <wsdl:output message="tns:QuerySuperviseAccountInfoInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查时间段会员开销户信息[1016]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryTimeSlotMemberOpenOrCencelAccountInfoInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberBankBalanceInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询会员出入金账号的银行余额[1020]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryMemberBankBalanceInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryMemberBankBalanceInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberTradeFlowInfoInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询时间段会员交易流水信息[1324]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryMemberTradeFlowInfoInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryMemberTradeFlowInfoInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberInOutMoneyFlowInfoInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询时间段会员出入金流水信息[1325]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryMemberInOutMoneyFlowInfoInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryMemberInOutMoneyFlowInfoInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryPaySerialStatusInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询支付指令状态[1327]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryPaySerialStatusInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryPaySerialStatusInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubAccountPayResultInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询子账户间支付的指令结果[1333],用于查询【1332】接口提交的子账户间支付的指令处理结果&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QuerySubAccountPayResultInterfaceSoapIn" />
+      <wsdl:output message="tns:QuerySubAccountPayResultInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryTradeResultByOrderIdInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;根据订单号查询会员交易流水结果【1342】（郑大专用）&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryTradeResultByOrderIdInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryTradeResultByOrderIdInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankAuthenticationInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;询银行小额鉴权转账结果[1348],(用于企业用户) 用于查询1343接口发起的小额鉴权的转账结果。鉴权指令号是1343接口同步返回的&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryBankAuthenticationInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryBankAuthenticationInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryReconciliationFilePwdInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;查询对账文件密码[1349]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:QueryReconciliationFilePwdInterfaceSoapIn" />
+      <wsdl:output message="tns:QueryReconciliationFilePwdInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MemberRechargeInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;会员在途充值[1350]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:MemberRechargeInterfaceSoapIn" />
+      <wsdl:output message="tns:MemberRechargeInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubAccountPayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;子账户间划转[1028]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SubAccountPayInterfaceSoapIn" />
+      <wsdl:output message="tns:SubAccountPayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountReviewPayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;子账户复核支付[1328]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ChildAccountReviewPayInterfaceSoapIn" />
+      <wsdl:output message="tns:ChildAccountReviewPayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlatformOperationPayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;平台操作支付[1331]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:PlatformOperationPayInterfaceSoapIn" />
+      <wsdl:output message="tns:PlatformOperationPayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountDirectPayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;子账户之间直接支付[1329],会员A直接支付给会员B,钱从会员A的子账户支付到会员B的银行卡&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ChildAccountDirectPayInterfaceSoapIn" />
+      <wsdl:output message="tns:ChildAccountDirectPayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountInDirectPayInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;子账户间支付[1332],会员A直接支付给会员B,钱从会员A的子账户支付到会员B的子账户。&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ChildAccountInDirectPayInterfaceSoapIn" />
+      <wsdl:output message="tns:ChildAccountInDirectPayInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountFrozenOrThawInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;子账户冻结解冻[1029]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ChildAccountFrozenOrThawInterfaceSoapIn" />
+      <wsdl:output message="tns:ChildAccountFrozenOrThawInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlatformChargeOrRefundInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;平台收费与退费[1030]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:PlatformChargeOrRefundInterfaceSoapIn" />
+      <wsdl:output message="tns:PlatformChargeOrRefundInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PlatformPayOrChargeInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;平台支付与收取[1031]&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:PlatformPayOrChargeInterfaceSoapIn" />
+      <wsdl:output message="tns:PlatformPayOrChargeInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardTypeInterface">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font color='red'&gt;获取证件类型列表&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetCardTypeInterfaceSoapIn" />
+      <wsdl:output message="tns:GetCardTypeInterfaceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SpotTranPayServicesSoap" type="tns:SpotTranPayServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="testA">
+      <soap:operation soapAction="http://demo2.xx3700.com/testA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:testAMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/CustRegisterSignYeePayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustErpRegisterSignYeePayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/CustErpRegisterSignYeePayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayValidateInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/CustRegisterSignYeePayValidateInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignInOrOutInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/SignInOrOutInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InMoneyFromTradeNetworkInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/InMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutMoneyFromTradeNetworkInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/OutMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrossBankOutMoneyFromTradeNetworkInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/CrossBankOutMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankMemberCapitalStationBalanceInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryBankMemberCapitalStationBalanceInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySuperviseAccountInfoInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QuerySuperviseAccountInfoInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryTimeSlotMemberOpenOrCencelAccountInfoInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberBankBalanceInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryMemberBankBalanceInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberTradeFlowInfoInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryMemberTradeFlowInfoInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberInOutMoneyFlowInfoInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryMemberInOutMoneyFlowInfoInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPaySerialStatusInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryPaySerialStatusInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubAccountPayResultInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QuerySubAccountPayResultInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTradeResultByOrderIdInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryTradeResultByOrderIdInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankAuthenticationInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryBankAuthenticationInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryReconciliationFilePwdInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/QueryReconciliationFilePwdInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MemberRechargeInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/MemberRechargeInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubAccountPayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/SubAccountPayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountReviewPayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/ChildAccountReviewPayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformOperationPayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/PlatformOperationPayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountDirectPayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/ChildAccountDirectPayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountInDirectPayInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/ChildAccountInDirectPayInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountFrozenOrThawInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/ChildAccountFrozenOrThawInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformChargeOrRefundInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/PlatformChargeOrRefundInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformPayOrChargeInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/PlatformPayOrChargeInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardTypeInterface">
+      <soap:operation soapAction="http://demo2.xx3700.com/GetCardTypeInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SpotTranPayServicesSoap12" type="tns:SpotTranPayServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="testA">
+      <soap12:operation soapAction="http://demo2.xx3700.com/testA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:testAMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/CustRegisterSignYeePayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustErpRegisterSignYeePayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/CustErpRegisterSignYeePayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustRegisterSignYeePayValidateInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/CustRegisterSignYeePayValidateInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignInOrOutInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/SignInOrOutInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InMoneyFromTradeNetworkInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/InMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutMoneyFromTradeNetworkInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/OutMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrossBankOutMoneyFromTradeNetworkInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/CrossBankOutMoneyFromTradeNetworkInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankMemberCapitalStationBalanceInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryBankMemberCapitalStationBalanceInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySuperviseAccountInfoInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QuerySuperviseAccountInfoInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTimeSlotMemberOpenOrCencelAccountInfoInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryTimeSlotMemberOpenOrCencelAccountInfoInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberBankBalanceInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryMemberBankBalanceInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberTradeFlowInfoInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryMemberTradeFlowInfoInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryMemberInOutMoneyFlowInfoInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryMemberInOutMoneyFlowInfoInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPaySerialStatusInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryPaySerialStatusInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySubAccountPayResultInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QuerySubAccountPayResultInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTradeResultByOrderIdInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryTradeResultByOrderIdInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankAuthenticationInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryBankAuthenticationInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryReconciliationFilePwdInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/QueryReconciliationFilePwdInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MemberRechargeInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/MemberRechargeInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubAccountPayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/SubAccountPayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountReviewPayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/ChildAccountReviewPayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformOperationPayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/PlatformOperationPayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountDirectPayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/ChildAccountDirectPayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountInDirectPayInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/ChildAccountInDirectPayInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChildAccountFrozenOrThawInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/ChildAccountFrozenOrThawInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformChargeOrRefundInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/PlatformChargeOrRefundInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PlatformPayOrChargeInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/PlatformPayOrChargeInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardTypeInterface">
+      <soap12:operation soapAction="http://demo2.xx3700.com/GetCardTypeInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SpotTranPayServices">
+    <wsdl:port name="SpotTranPayServicesSoap" binding="tns:SpotTranPayServicesSoap">
+      <soap:address location="http://115.159.186.113:8688/SpotTranPayServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SpotTranPayServicesSoap12" binding="tns:SpotTranPayServicesSoap12">
+      <soap12:address location="http://115.159.186.113:8688/SpotTranPayServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
